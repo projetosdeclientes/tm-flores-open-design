@@ -121,17 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── 8. CARROSSEL DE PRODUTOS (seções da home) ────────────────────
-  if (typeof initProductCarousels === 'function') {
-    initProductCarousels();
-  }
-
-  // ── 9. SCROLL REVEAL ─────────────────────────────────────────────
+  // ── 8. SCROLL REVEAL ─────────────────────────────────────────────
   if (typeof initReveal === 'function') {
     initReveal();
   }
 
-  // ── 10. TILT 3D ──────────────────────────────────────────────────
+  // ── 9. TILT 3D ──────────────────────────────────────────────────
   if (typeof initTilt3D === 'function') {
     initTilt3D();
   }

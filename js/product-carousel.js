@@ -1,33 +1,40 @@
 function initProductCarousels() {
   document.querySelectorAll('.products-carousel').forEach(carousel => {
     let isDown = false;
+    let didDrag = false;
     let startX, scrollLeft;
 
-    carousel.addEventListener('pointerdown', e => {
+    function onPointerDown(e) {
       isDown = true;
+      didDrag = false;
       carousel.style.cursor = 'grabbing';
       startX = e.pageX - carousel.offsetLeft;
       scrollLeft = carousel.scrollLeft;
-      carousel.setPointerCapture(e.pointerId);
-    });
+      carousel.addEventListener('pointermove', onPointerMove);
+      carousel.addEventListener('pointerup', onPointerUp);
+      carousel.addEventListener('pointerleave', onPointerUp);
+    }
 
-    carousel.addEventListener('pointerup', () => {
-      isDown = false;
-      carousel.style.cursor = 'grab';
-    });
-
-    carousel.addEventListener('pointerleave', () => {
-      isDown = false;
-      carousel.style.cursor = 'grab';
-    });
-
-    carousel.addEventListener('pointermove', e => {
+    function onPointerMove(e) {
       if (!isDown) return;
-      e.preventDefault();
       const x    = e.pageX - carousel.offsetLeft;
       const walk = (x - startX) * 1.5;
+      if (Math.abs(walk) > 5) {
+        didDrag = true;
+        e.preventDefault();
+      }
       carousel.scrollLeft = scrollLeft - walk;
-    });
+    }
+
+    function onPointerUp() {
+      isDown = false;
+      carousel.style.cursor = 'grab';
+      carousel.removeEventListener('pointermove', onPointerMove);
+      carousel.removeEventListener('pointerup', onPointerUp);
+      carousel.removeEventListener('pointerleave', onPointerUp);
+    }
+
+    carousel.addEventListener('pointerdown', onPointerDown);
   });
 }
 
