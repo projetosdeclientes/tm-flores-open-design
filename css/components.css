@@ -428,7 +428,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1fr 1.2fr;
   gap: var(--space-12);
   margin-bottom: var(--space-16);
 }
@@ -437,12 +437,27 @@
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
 }
 
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  text-decoration: none;
+  margin-bottom: var(--space-6);
+}
+
+.footer-title-text {
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  color: var(--purple-deep);
+}
+
 .footer-logo {
   width: 96px;
   height: 96px;
   border-radius: 50%;
   object-fit: contain;
-  margin-bottom: var(--space-6);
 }
 
 @media (min-width: 768px) {

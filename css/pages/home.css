@@ -80,77 +80,41 @@
   background-color: var(--cream);
 }
 
-.testimonials-grid {
+.testimonials-prints-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
 }
 
-@media (max-width: 1024px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+@media (max-width: 768px) {
+  .testimonials-prints-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 640px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.testimonial-card {
-  background: var(--white);
-  padding: var(--space-8);
+.testimonial-print-card {
   border-radius: var(--radius-xl);
+  overflow: hidden;
   box-shadow: var(--shadow-card);
+  background: var(--white);
   transition: transform var(--dur-normal) var(--ease-spring);
 }
 
-.testimonial-card:hover {
-  transform: translateY(-5px);
+.testimonial-print-card:hover { transform: translateY(-4px); }
+
+.testimonial-print-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.testimonial-stars {
-  color: var(--gold-main);
-  margin-bottom: var(--space-4);
-  font-size: var(--text-lg);
-}
-
-.testimonial-text {
-  font-family: var(--font-sans);
-  font-size: var(--text-sm);
-  line-height: var(--leading-relaxed);
-  color: var(--text-medium);
-  margin-bottom: var(--space-6);
-  font-style: italic;
-}
-
-.testimonial-author {
+.testimonial-print-placeholder {
   display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.testimonial-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--lavender-light);
-  color: var(--purple-deep);
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-family: var(--font-serif);
-}
-
-.testimonial-author strong {
-  display: block;
-  font-size: var(--text-sm);
-  color: var(--text-dark);
-}
-
-.testimonial-author span {
-  font-size: var(--text-xs);
-  color: var(--text-light);
+  gap: var(--space-2);
+  padding: var(--space-12) var(--space-6);
+  background: var(--lavender-ultra);
+  text-align: center;
+  font-family: var(--font-sans);
+  color: var(--text-medium);
 }
