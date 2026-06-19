@@ -88,7 +88,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── 6. CURSOR MAGNÉTICO (desktop only) ──────────────────────────
+  // ── 6. CLICK NO CARD INTEIRO ────────────────────────────────────
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      const slug = card.dataset.product;
+      const dest = slug ? slug + '.html' : card.querySelector('a[href]')?.getAttribute('href');
+      if (dest && !dest.startsWith('http') && !dest.startsWith('#')) {
+        e.preventDefault();
+        if (transitionOverlay) {
+          transitionOverlay.classList.add('entering');
+          setTimeout(() => { window.location.href = dest; }, 550);
+        } else {
+          window.location.href = dest;
+        }
+      }
+    });
+  });
+
+  // ── 7. CURSOR MAGNÉTICO (desktop only) ──────────────────────────
   if (!window.matchMedia('(pointer: coarse)').matches) {
     document.querySelectorAll('.btn-magnetic').forEach(btn => {
       btn.addEventListener('mousemove', e => {
@@ -103,17 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── 7. CARROSSEL DE PRODUTOS (seções da home) ────────────────────
+  // ── 8. CARROSSEL DE PRODUTOS (seções da home) ────────────────────
   if (typeof initProductCarousels === 'function') {
     initProductCarousels();
   }
 
-  // ── 8. SCROLL REVEAL ─────────────────────────────────────────────
+  // ── 9. SCROLL REVEAL ─────────────────────────────────────────────
   if (typeof initReveal === 'function') {
     initReveal();
   }
 
-  // ── 9. TILT 3D ───────────────────────────────────────────────────
+  // ── 10. TILT 3D ──────────────────────────────────────────────────
   if (typeof initTilt3D === 'function') {
     initTilt3D();
   }
