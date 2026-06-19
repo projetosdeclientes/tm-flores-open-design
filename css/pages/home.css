@@ -1,15 +1,4 @@
 /* Homepage styles */
-.hero-track {
-  display: flex;
-  height: 100%;
-}
-
-.hero-slide {
-  flex: 0 0 100%;
-  position: relative;
-  overflow: hidden;
-}
-
 /* Products sections */
 .products-section {
   padding: var(--section-py) 0;

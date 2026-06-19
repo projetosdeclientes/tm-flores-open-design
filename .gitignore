@@ -24,6 +24,7 @@ Thumbs.db
 .od-skills/
 assets/
 site-tm-flores/
+mql*.md
 mqie*.md
 mqic*.md
 mqie*.jpg
@@ -31,3 +32,4 @@ mqie*.png
 mqic*.jpg
 mqic*.png
 tm-flores-e-plantas.html.artifact.json
+${APPDATA}/

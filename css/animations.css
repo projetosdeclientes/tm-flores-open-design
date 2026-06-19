@@ -50,32 +50,60 @@
   100% { transform: scale(0.9)  translateY(10px);   opacity: 0.5; }
 }
 
-/* 🎠 2. Hero Banner — Parallax e Carrossel */
+/* 🎠 2. Hero Banner — Crossfade + Ken Burns (opacity/scale) */
 .hero-carousel {
   position: relative;
   width: 100%;
-  height: 90vh;
-  min-height: 560px;
+  height: 65vh;
+  min-height: 480px;
   overflow: hidden;
   background: var(--cream);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-carousel {
+    height: 90vh;
+  }
 }
 
 .hero-track {
-  display: flex;
+  position: relative;
+  width: 100%;
   height: 100%;
-  transition: transform 0.8s var(--ease-silk);
+  overflow: hidden;
 }
 
 .hero-slide {
-  flex: 0 0 100%;
-  position: relative;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 1000ms var(--ease-silk),
+              transform 1000ms var(--ease-silk);
   overflow: hidden;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+@keyframes ken-burns {
+  from { transform: scale(1) translateY(0); }
+  to   { transform: scale(1.08) translateY(0); }
+}
+
+.hero-slide.active .hero-parallax-layer img {
+  animation: ken-burns 8s ease-out forwards;
 }
 
 .hero-parallax-layer {
   position: absolute;
   inset: 0;
-  height: 100%;
 }
 
 .hero-parallax-layer img {
@@ -111,6 +139,39 @@
   }
 }
 
+.hero-eyebrow,
+.hero-headline,
+.hero-cta {
+  opacity: 0;
+}
+
+.hero-eyebrow { --dist-y: 16px; }
+.hero-headline { --dist-y: 24px; }
+.hero-cta { --dist-y: 32px; }
+
+.hero-slide.active .hero-eyebrow {
+  animation: hero-text-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-slide.active .hero-headline {
+  animation: hero-text-in 1s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-slide.active .hero-cta {
+  animation: hero-text-in 1s 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hero-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--dist-y));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-eyebrow {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
@@ -142,21 +203,23 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: var(--space-2);
-  z-index: 20;
+  gap: var(--space-3);
+  z-index: 30;
 }
 
 .hero-dot {
-  width: 8px; height: 8px;
+  height: 4px;
+  width: 32px;
   border-radius: var(--radius-full);
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.3);
   border: none;
   cursor: pointer;
-  transition: all var(--dur-normal) var(--ease-spring);
+  transition: all 500ms var(--ease-silk);
+  padding: 0;
 }
 
 .hero-dot.active {
-  width: 28px;
+  width: 64px;
   background: var(--gold-main);
 }
 
@@ -176,7 +239,8 @@
   font-size: 2rem;
   cursor: pointer;
   transition: all var(--dur-normal);
-  z-index: 20;
+  z-index: 30;
+  border: none;
 }
 
 @media (max-width: 768px) {
