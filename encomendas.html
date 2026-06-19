@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TM Flores e Plantas — Encomendas Personalizadas</title>
+  <meta name="description" content="Peça seu buquê personalizado por foto na TM Flores e Plantas. O buquê dos seus sonhos em poucos passos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/orders.css">
+</head>
+<body>
+  <div class="bg-orbs-container" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span class="announcement-text">✦ Encomende seu buquê personalizado por foto! ✦ <a href="encomendas.html" class="announcement-link">Saiba mais</a></span>
+      <span class="announcement-text">✦ Encomende seu buquê personalizado por foto! ✦ <a href="encomendas.html" class="announcement-link">Saiba mais</a></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="TM Flores e Plantas" class="logo-img"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Produtos <span class="dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu"><a href="buques.html" class="dropdown-item">🌹 Buquês</a><a href="plantas.html" class="dropdown-item">🌿 Plantas</a></div>
+        </li>
+        <li><a href="encomendas.html" class="nav-link active">Encomendas</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre a Loja</a></li>
+      </ul>
+      <div class="nav-ctas">
+        <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="nav-social-btn btn-instagram-icon" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/5511918475136?text=Olá!%20Quero%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu-close">✕</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="buques.html">🌹 Buquês</a></li>
+        <li><a href="plantas.html">🌿 Plantas</a></li>
+        <li><a href="encomendas.html">Encomendas Personalizadas</a></li>
+        <li><a href="sobre.html">Sobre a Loja</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  </header>
+
+  <main>
+    <!-- Orders Hero -->
+    <section class="orders-hero">
+      <div class="container">
+        <div class="orders-hero-content reveal-left">
+          <span class="section-eyebrow">Serviço exclusivo</span>
+          <h1 class="orders-hero-title">O buquê que você<br><em>sempre imaginou</em></h1>
+          <p class="orders-hero-subtitle">Tem uma foto de um buquê que você amou? Manda pra gente. A gente olha com carinho e te diz se conseguimos fazer igualzinho — ou ainda mais lindo.</p>
+          <a href="#como-funciona" class="btn btn-primary btn-magnetic orders-hero-cta">Ver como funciona ↓</a>
+        </div>
+        <div class="orders-hero-visual reveal-right">
+          <div class="orders-hero-frame">
+            <div class="orders-hero-frame-inner">
+              <div class="logo-circle-frame">
+                <img src="logo.png" alt="TM Flores e Plantas" class="orders-hero-frame-logo">
+              </div>
+              <p class="orders-hero-frame-text">"Manda a foto do buquê dos seus sonhos"</p>
+            </div>
+            <div class="orders-hero-frame-border"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Simples assim</span>
+          <h2 class="section-title">Como Funciona</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon">📸</div>
+            <h3 class="step-title">Escolha seu buquê</h3>
+            <p class="step-desc">Encontrou a foto de um buquê que você amou? Pode ser do Pinterest, Instagram, um casamento que você foi — qualquer referência serve. Salve a foto no seu celular.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon">💬</div>
+            <h3 class="step-title">Mande pelo WhatsApp</h3>
+            <p class="step-desc">Clique no botão abaixo e nos mande a foto diretamente pelo WhatsApp. Se quiser, pode contar também a ocasião — aniversário, pedido, presente — isso nos ajuda a entender melhor o que você precisa.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon">🌹</div>
+            <h3 class="step-title">A gente avalia</h3>
+            <p class="step-desc">Nossa equipe analisa a foto com cuidado e te responde dizendo se conseguimos reproduzir o buquê. Se sim, já combinamos os detalhes, valor e prazo. Se não, sugerimos algo parecido e igualmente lindo.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <div class="step-icon">🎁</div>
+            <h3 class="step-title">Receba seu buquê</h3>
+            <p class="step-desc">Confirmado o pedido, preparamos tudo com atenção e carinho. Você retira aqui no Shopping Central Park Cotia ou combinamos a entrega. Simples assim.</p>
+          </div>
+        </div>
+        <div class="how-it-works-cta">
+          <p class="how-it-works-cta-text">Pronto pra começar?</p>
+          <a href="https://wa.me/5511918475136?text=Olá! Quero fazer um buquê personalizado. Vou te mandar a foto de referência!" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Mandar minha foto agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que personalizado? -->
+    <section class="why-custom-section">
+      <div class="container">
+        <div class="why-custom-grid">
+          <div class="why-custom-text reveal-left">
+            <span class="section-eyebrow">Por que escolher</span>
+            <h2 class="section-title">Um buquê feito<br><span class="gold-text italic">só para você</span></h2>
+            <ul class="why-custom-list">
+              <li class="why-custom-item">
+                <span class="why-custom-check">✦</span>
+                <div>
+                  <strong>É único</strong>
+                  <p>Nenhum outro buquê igual ao seu vai existir. Ele foi pensado e feito especialmente para a sua história.</p>
+                </div>
+              </li>
+              <li class="why-custom-item">
+                <span class="why-custom-check">✦</span>
+                <div>
+                  <strong>Mais significado</strong>
+                  <p>Quando você escolhe cada detalhe, o presente ganha um nível de carinho que qualquer um consegue sentir.</p>
+                </div>
+              </li>
+              <li class="why-custom-item">
+                <span class="why-custom-check">✦</span>
+                <div>
+                  <strong>Sem complicação</strong>
+                  <p>É só mandar a foto. A gente cuida de todo o resto com atenção e profissionalismo.</p>
+                </div>
+              </li>
+              <li class="why-custom-item">
+                <span class="why-custom-check">✦</span>
+                <div>
+                  <strong>Flores frescas</strong>
+                  <p>Todos os nossos buquês são feitos com flores selecionadas no dia, garantindo frescor e beleza máximos.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="why-custom-visual reveal-right">
+            <div class="why-custom-quote-card">
+              <span class="why-custom-quote-icon">"</span>
+              <p class="why-custom-quote-text">Flores têm o poder de transmitir sentimentos, criar memórias e tornar cada momento mais especial.</p>
+              <cite class="why-custom-quote-author">— TM Flores e Plantas</cite>
+              <div class="why-custom-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importante Section -->
+    <section class="orders-notes-section">
+      <div class="container">
+        <div class="notes-box">
+          <h3 class="notes-title">📋 Algumas coisinhas importantes</h3>
+          <ul class="notes-list">
+            <li class="note-item">
+              <span class="note-bullet">✦</span>
+              <div>
+                <strong>Avaliamos cada pedido individualmente.</strong>
+                <p>Nem sempre conseguimos reproduzir exatamente como na foto, mas sempre buscamos chegar o mais perto possível.</p>
+              </div>
+            </li>
+            <li class="note-item">
+              <span class="note-bullet">✦</span>
+              <div>
+                <strong>O valor varia conforme o buquê.</strong>
+                <p>Depois de avaliar a foto, te passamos o preço antes de confirmar. Sem surpresas.</p>
+              </div>
+            </li>
+            <li class="note-item">
+              <span class="note-bullet">✦</span>
+              <div>
+                <strong>Faça o pedido com antecedência.</strong>
+                <p>Recomendamos encomendar com pelo menos 24–48h de antecedência.</p>
+              </div>
+            </li>
+            <li class="note-item">
+              <span class="note-bullet">✦</span>
+              <div>
+                <strong>Retirada ou entrega.</strong>
+                <p>Você pode retirar no Shopping Central Park Cotia ou combinamos a entrega.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="orders-final-cta-section">
+      <div class="container">
+        <div class="final-cta-content">
+          <span class="section-eyebrow final-cta-eyebrow">Tudo começa com uma mensagem</span>
+          <h2 class="final-cta-title">Manda a foto.</h2>
+          <h2 class="final-cta-title" style="color:#DDD0F0;">A gente cuida do resto.</h2>
+          <a href="https://wa.me/5511918475136" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Iniciar meu pedido personalizado
+          </a>
+          <p class="final-cta-hours">Seg a Sáb 10h–22h · Dom 12h–20h</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="TM Flores e Plantas" class="footer-logo" style="filter:none;">
+          <p class="footer-tagline">Florescendo histórias e fortalecendo laços.</p>
+          <p class="footer-about-text">Especialistas em buquês artesanais e plantas ornamentais. Levando beleza e emoção para Cotia e região desde 2024.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="social-btn social-btn-whatsapp" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="social-btn social-btn-instagram" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-heading">Navegação</h3>
+          <ul><li><a href="index.html">Início</a></li><li><a href="buques.html">🌹 Buquês</a></li><li><a href="plantas.html">🌿 Plantas</a></li><li><a href="encomendas.html">Encomendas Personalizadas</a></li><li><a href="sobre.html">Sobre a Loja</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contato</h3>
+          <div class="footer-contact-item"><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" style="color:var(--whatsapp);font-weight:700;">+55 11 91847-5136</a></div>
+          <div class="footer-contact-item"><a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener">@tmfloreseplantas</a></div>
+          <div class="footer-hours"><h4 class="footer-hours-title">Horário</h4><p>Seg a Sáb: <strong>10h às 22h</strong></p><p>Dom: <strong>12h às 20h</strong></p></div>
+        </div>
+        <div class="footer-location">
+          <h3 class="footer-heading">Onde Estamos</h3>
+          <p class="footer-address">Subsolo · Shopping Central Park Cotia<br>Av. Ivo Mário Isaac Pires, 4040<br>Tijuco Preto, Vargem Grande Paulista — SP</p>
+          <div class="footer-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr" width="100%" height="120" style="border:0;border-radius:var(--radius-md);" allowfullscreen="" loading="lazy" title="TM Flores no Google Maps"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 TM Flores e Plantas. Todos os direitos reservados.</p></div>
+  </footer>
+
+  <div class="page-transition-overlay" id="pageTransitionOverlay"></div>
+
+  <div class="float-whatsapp" id="floatWhatsApp">
+    <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  </div>
+
+  <script src="js/reveal.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

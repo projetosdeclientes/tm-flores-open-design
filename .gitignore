@@ -1,0 +1,33 @@
+# Python SDK
+Python/
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+site-tm-flores/node_modules/
+
+# Build output
+site-tm-flores/dist/
+site-tm-flores/.vinxi/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Open Design artifacts
+.od-skills/
+assets/
+site-tm-flores/
+mqie*.md
+mqic*.md
+mqie*.jpg
+mqie*.png
+mqic*.jpg
+mqic*.png
+tm-flores-e-plantas.html.artifact.json

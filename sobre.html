@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TM Flores e Plantas — Sobre a Loja</title>
+  <meta name="description" content="Conheça a história da TM Flores e Plantas. Fundada com amor e cultivada com paixão. Depoimentos, localização e horários.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+</head>
+<body>
+  <div class="bg-orbs-container" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="TM Flores e Plantas" class="logo-img"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Produtos <span class="dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu"><a href="buques.html" class="dropdown-item">🌹 Buquês</a><a href="plantas.html" class="dropdown-item">🌿 Plantas</a></div>
+        </li>
+        <li><a href="encomendas.html" class="nav-link">Encomendas</a></li>
+        <li><a href="sobre.html" class="nav-link active">Sobre a Loja</a></li>
+      </ul>
+      <div class="nav-ctas">
+        <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="nav-social-btn btn-instagram-icon" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/5511918475136?text=Olá!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu-close">✕</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="buques.html">🌹 Buquês</a></li>
+        <li><a href="plantas.html">🌿 Plantas</a></li>
+        <li><a href="encomendas.html">Encomendas Personalizadas</a></li>
+        <li><a href="sobre.html">Sobre a Loja</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero-content reveal-fade">
+          <span class="section-eyebrow">Conheça nossa história</span>
+          <h1 class="about-hero-title">Sobre a<br><em>TM Flores e Plantas</em></h1>
+          <p class="about-hero-lead">Nascemos de um sonho. Crescemos com amor. E estamos aqui para florescer junto com você.</p>
+        </div>
+      </div>
+      <div style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.2;pointer-events:none;">
+        <div style="position:absolute;top:-10%;left:-5%;width:384px;height:384px;background:var(--purple-main);filter:blur(120px);border-radius:50%;animation:orb-breathe 8s ease-in-out infinite alternate;"></div>
+        <div style="position:absolute;bottom:-10%;right:-5%;width:384px;height:384px;background:var(--gold-main);filter:blur(120px);border-radius:50%;animation:orb-breathe 8s ease-in-out infinite alternate;animation-delay:2s;"></div>
+      </div>
+      <div class="about-hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--cream)"/></svg>
+      </div>
+    </section>
+
+    <section class="about-story-section">
+      <div class="container">
+        <div class="about-story-grid">
+          <div class="about-story-text reveal-left">
+            <span class="section-eyebrow">Nossa história</span>
+            <h2 class="section-title" style="text-align:left;">Fundada com amor,<br>cultivada com paixão</h2>
+            <div class="about-story-content">
+              <p>Fundada em 2024, nossa floricultura nasceu da realização de um sonho cultivado com amor, dedicação e a paixão pela beleza que a natureza oferece.</p>
+              <p>Acreditamos que as flores têm o poder de transmitir sentimentos, criar memórias e tornar cada momento mais especial.</p>
+              <p>Com sensibilidade e cuidado, levamos beleza e emoção para a vida das pessoas, florescendo histórias e fortalecendo laços. 🌻</p>
+            </div>
+            <blockquote class="about-story-quote"><p>"Florescendo histórias<br>e fortalecendo laços."</p></blockquote>
+            <div class="about-story-stats">
+              <div class="about-stat"><span class="about-stat-number">2024</span><span class="about-stat-label">Fundação</span></div>
+              <div class="about-stat-divider"></div>
+              <div class="about-stat"><span class="about-stat-number">100%</span><span class="about-stat-label">Flores Frescas</span></div>
+              <div class="about-stat-divider"></div>
+              <div class="about-stat"><span class="about-stat-number">★ 5.0</span><span class="about-stat-label">Google Maps</span></div>
+            </div>
+          </div>
+          <div class="about-story-images reveal-right">
+            <div style="display:flex;flex-direction:column;gap:var(--space-8);">
+              <div style="position:relative;width:100%;">
+                <img src="about/images/historia-v2-02.png" alt="Interior da Loja" class="about-img" onerror="this.style.display='none'">
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);">
+                <img src="about/images/historia-v2-01.png" alt="Logo e Buquê" class="about-img" onerror="this.style.display='none'">
+                <img src="about/images/historia-v2-03.png" alt="Cliente com Flores" class="about-img" onerror="this.style.display='none'">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-full-section" id="depoimentos">
+      <div class="container">
+        <div class="section-header reveal-title">
+          <span class="section-eyebrow">O que dizem nossos clientes</span>
+          <h2 class="section-title">Depoimentos</h2>
+        </div>
+        <div class="testimonials-prints-grid reveal-stagger" style="max-width:960px;margin:0 auto var(--space-16);">
+          <div class="testimonial-print-card">
+            <div class="testimonial-print"><img src="testimonials/images/depoimento-01.png" alt="Depoimento 1" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #01</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
+          </div>
+          <div class="testimonial-print-card">
+            <div class="testimonial-print"><img src="testimonials/images/depoimento-02.png" alt="Depoimento 2" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #02</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
+          </div>
+          <div class="testimonial-print-card">
+            <div class="testimonial-print"><img src="testimonials/images/depoimento-03.png" alt="Depoimento 3" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #03</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
+          </div>
+        </div>
+        <div class="reveal-up" style="text-align:center;">
+          <p style="font-size:var(--text-sm);color:var(--text-light);margin-bottom:var(--space-6);">Veja todas as avaliações no Google</p>
+          <a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" class="btn btn-outline">★ Ver avaliações no Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="find-us-section">
+      <div class="container">
+        <div class="section-header reveal-title">
+          <span class="section-eyebrow">Visite-nos</span>
+          <h2 class="section-title">Encontre a Gente</h2>
+        </div>
+        <div class="find-us-grid">
+          <div class="find-us-info reveal-left">
+            <div class="contact-block">
+              <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="contact-btn contact-btn-whatsapp">
+                <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:var(--whatsapp);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;">(11) 91847-5136</strong><span style="font-size:var(--text-sm);color:var(--text-medium);">WhatsApp · Clique para falar</span></div>
+              </a>
+            </div>
+            <div class="contact-block">
+              <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="contact-btn contact-btn-instagram">
+                <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:var(--instagram-gradient);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+                <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;">@tmfloreseplantas</strong><span style="font-size:var(--text-sm);color:var(--text-medium);">Instagram · Nos siga</span></div>
+              </a>
+            </div>
+            <div class="contact-block contact-address">
+              <span class="contact-address-icon">📍</span>
+              <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;margin-bottom:var(--space-2);">Nossa Localização</strong>
+              <p>Subsolo · Shopping Central Park Cotia<br>Av. Ivo Mário Isaac Pires, 4040<br>Tijuco Preto, Vargem Grande Paulista — SP<br>CEP: 06741-128</p>
+              <a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" style="color:var(--gold-text);font-weight:600;font-size:var(--text-sm);">Abrir no Google Maps →</a></div>
+            </div>
+            <div class="contact-block contact-hours">
+              <span class="contact-hours-icon">🕐</span>
+              <div style="flex-grow:1;"><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;margin-bottom:var(--space-4);">Horário de Atendimento</strong>
+              <div class="hours-table"><div class="hours-row"><span class="hours-day">Segunda a Sábado</span><span class="hours-time">10h às 22h</span></div><div class="hours-row"><span class="hours-day">Domingo</span><span class="hours-time">12h às 20h</span></div></div></div>
+            </div>
+          </div>
+          <div class="find-us-map" style="height:100%;min-height:400px;">
+            <div class="map-wrapper" style="height:100%;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="TM Flores no Google Maps"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="TM Flores e Plantas" class="footer-logo" style="filter:none;">
+          <p class="footer-tagline">Florescendo histórias e fortalecendo laços.</p>
+          <p class="footer-about-text">Especialistas em buquês artesanais e plantas ornamentais. Levando beleza e emoção para Cotia e região desde 2024.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="social-btn social-btn-whatsapp" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="social-btn social-btn-instagram" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-heading">Navegação</h3>
+          <ul><li><a href="index.html">Início</a></li><li><a href="buques.html">🌹 Buquês</a></li><li><a href="plantas.html">🌿 Plantas</a></li><li><a href="encomendas.html">Encomendas Personalizadas</a></li><li><a href="sobre.html">Sobre a Loja</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contato</h3>
+          <div class="footer-contact-item"><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" style="color:var(--whatsapp);font-weight:700;">+55 11 91847-5136</a></div>
+          <div class="footer-contact-item"><a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener">@tmfloreseplantas</a></div>
+          <div class="footer-hours"><h4 class="footer-hours-title">Horário</h4><p>Seg a Sáb: <strong>10h às 22h</strong></p><p>Dom: <strong>12h às 20h</strong></p></div>
+        </div>
+        <div class="footer-location">
+          <h3 class="footer-heading">Onde Estamos</h3>
+          <p class="footer-address">Subsolo · Shopping Central Park Cotia<br>Av. Ivo Mário Isaac Pires, 4040<br>Tijuco Preto, Vargem Grande Paulista — SP</p>
+          <div class="footer-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr" width="100%" height="120" style="border:0;border-radius:var(--radius-md);" allowfullscreen="" loading="lazy" title="TM Flores no Google Maps"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 TM Flores e Plantas. Todos os direitos reservados.</p></div>
+  </footer>
+
+  <div class="page-transition-overlay" id="pageTransitionOverlay"></div>
+  <div class="float-whatsapp" id="floatWhatsApp">
+    <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  </div>
+
+  <script src="js/reveal.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
