@@ -128,8 +128,17 @@ ul, ol { list-style: none; }
 }
 
 .btn-sm {
-  padding: var(--space-2) var(--space-4);
-  font-size: var(--text-xs);
+  padding: 8px 20px;
+  font-size: 12px;
+  gap: var(--space-2);
+}
+
+.btn-sm:hover {
+  transform: scale(1.05);
+}
+
+.btn-sm:active {
+  transform: scale(0.95);
 }
 
 .btn-lg {
@@ -153,6 +162,10 @@ ul, ol { list-style: none; }
   color: #fff !important;
 }
 
+.btn-instagram:hover {
+  transform: scale(1.05);
+}
+
 .btn-primary {
   background: var(--gold-gradient);
   color: var(--black-rich) !important;
@@ -170,6 +183,20 @@ ul, ol { list-style: none; }
 
 .btn-outline:hover {
   background: var(--gold-main);
+  color: #fff !important;
+}
+
+.btn-outline-card {
+  border: 1.5px solid var(--purple-main);
+  color: var(--purple-main);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+}
+
+.btn-outline-card:hover {
+  background: var(--purple-main);
   color: #fff !important;
 }
 

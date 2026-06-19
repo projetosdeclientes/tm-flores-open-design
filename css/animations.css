@@ -150,15 +150,15 @@
 .hero-cta { --dist-y: 32px; }
 
 .hero-slide.active .hero-eyebrow {
-  animation: hero-text-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: hero-text-in 0.7s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .hero-slide.active .hero-headline {
-  animation: hero-text-in 1s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: hero-text-in 1s 0.2s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .hero-slide.active .hero-cta {
-  animation: hero-text-in 1s 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: hero-text-in 1s 0.4s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 @keyframes hero-text-in {
