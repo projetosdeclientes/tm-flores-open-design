@@ -1,207 +1,245 @@
-﻿<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TM Flores e Plantas — Sobre a Loja</title>
-  <meta name="description" content="Conheça a história da TM Flores e Plantas. Fundada com amor e cultivada com paixão. Depoimentos, localização e horários.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/pages/about.css">
-</head>
-<body>
-  <div class="bg-orbs-container" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="/logo.png?v=35"><link rel="preload" as="image" href="/about/images/historia-v2-02.png"><link rel="preload" as="image" href="/about/images/historia-v2-01.png"><link rel="preload" as="image" href="/about/images/historia-v2-03.png"><link rel="preload" as="image" href="/testimonials/images/depoimento-01.png"><link rel="preload" as="image" href="/testimonials/images/depoimento-02.png"><link rel="preload" as="image" href="/testimonials/images/depoimento-03.png"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Open+Sans:wght@300;400;600;700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet" data-precedence="default"><link rel="stylesheet" href="/assets/index-CtyTGcd0.css" type="text/css" data-precedence="default"><title>TM Flores e Plantas — Floricultura em Cotia &amp; Vargem Grande Paulista</title><meta name="description" content="Buquês artesanais, plantas ornamentais e encomendas personalizadas no Shopping Central Park. Entrega de emoções desde 2024."><meta property="og:title" content="TM Flores e Plantas — Floricultura em Cotia &amp; Vargem Grande Paulista"><meta name="twitter:title" content="TM Flores e Plantas — Floricultura em Cotia &amp; Vargem Grande Paulista"><meta property="og:description" content="Buquês artesanais, plantas ornamentais e encomendas personalizadas no Shopping Central Park. Entrega de emoções desde 2024."><meta name="twitter:description" content="Buquês artesanais, plantas ornamentais e encomendas personalizadas no Shopping Central Park. Entrega de emoções desde 2024."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3cd005ec-be77-4880-be0d-800e1dcec7c3/id-preview-dd00529f--3b8784d1-3152-45ff-a404-d1c03ef349ef.lovable.app-1780794851451.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3cd005ec-be77-4880-be0d-800e1dcec7c3/id-preview-dd00529f--3b8784d1-3152-45ff-a404-d1c03ef349ef.lovable.app-1780794851451.png"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="website"><link rel="modulepreload" href="/assets/index-BnSIcxkF.js"><link rel="modulepreload" href="/assets/sobre-DepXUHFp.js"><link rel="modulepreload" href="/assets/Navbar-_jaI3xYO.js"><link rel="icon" type="image/png" href="/logo.png?v=2"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
 
-  <header class="site-header" id="siteHeader">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo"><img src="logo.png" alt="TM Flores e Plantas" class="logo-img"></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Início</a></li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-dropdown-toggle">Produtos <span class="dropdown-arrow">▾</span></button>
-          <div class="nav-dropdown-menu"><a href="buques.html" class="dropdown-item">🌹 Buquês</a><a href="plantas.html" class="dropdown-item">🌿 Plantas</a></div>
-        </li>
-        <li><a href="encomendas.html" class="nav-link">Encomendas</a></li>
-        <li><a href="sobre.html" class="nav-link active">Sobre a Loja</a></li>
-      </ul>
-      <div class="nav-ctas">
-        <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="nav-social-btn btn-instagram-icon" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="https://wa.me/5511918475136?text=Olá!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp</a>
-      </div>
-      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <button class="mobile-menu-close">✕</button>
-      <ul class="mobile-nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="buques.html">🌹 Buquês</a></li>
-        <li><a href="plantas.html">🌿 Plantas</a></li>
-        <li><a href="encomendas.html">Encomendas Personalizadas</a></li>
-        <li><a href="sobre.html">Sobre a Loja</a></li>
-      </ul>
-    </div>
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-  </header>
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
 
-  <main>
-    <section class="about-hero">
-      <div class="container">
-        <div class="about-hero-content reveal-fade">
-          <span class="section-eyebrow">Conheça nossa história</span>
-          <h1 class="about-hero-title">Sobre a<br><em>TM Flores e Plantas</em></h1>
-          <p class="about-hero-lead">Nascemos de um sonho. Crescemos com amor. E estamos aqui para florescer junto com você.</p>
-        </div>
-      </div>
-      <div style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.2;pointer-events:none;">
-        <div style="position:absolute;top:-10%;left:-5%;width:384px;height:384px;background:var(--purple-main);filter:blur(120px);border-radius:50%;animation:orb-breathe 8s ease-in-out infinite alternate;"></div>
-        <div style="position:absolute;bottom:-10%;right:-5%;width:384px;height:384px;background:var(--gold-main);filter:blur(120px);border-radius:50%;animation:orb-breathe 8s ease-in-out infinite alternate;animation-delay:2s;"></div>
-      </div>
-      <div class="about-hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--cream)"/></svg>
-      </div>
-    </section>
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
 
-    <section class="about-story-section">
-      <div class="container">
-        <div class="about-story-grid">
-          <div class="about-story-text reveal-left">
-            <span class="section-eyebrow">Nossa história</span>
-            <h2 class="section-title" style="text-align:left;">Fundada com amor,<br>cultivada com paixão</h2>
-            <div class="about-story-content">
-              <p>Fundada em 2024, nossa floricultura nasceu da realização de um sonho cultivado com amor, dedicação e a paixão pela beleza que a natureza oferece.</p>
-              <p>Acreditamos que as flores têm o poder de transmitir sentimentos, criar memórias e tornar cada momento mais especial.</p>
-              <p>Com sensibilidade e cuidado, levamos beleza e emoção para a vida das pessoas, florescendo histórias e fortalecendo laços. 🌻</p>
-            </div>
-            <blockquote class="about-story-quote"><p>"Florescendo histórias<br>e fortalecendo laços."</p></blockquote>
-            <div class="about-story-stats">
-              <div class="about-stat"><span class="about-stat-number">2024</span><span class="about-stat-label">Fundação</span></div>
-              <div class="about-stat-divider"></div>
-              <div class="about-stat"><span class="about-stat-number">100%</span><span class="about-stat-label">Flores Frescas</span></div>
-              <div class="about-stat-divider"></div>
-              <div class="about-stat"><span class="about-stat-number">★ 5.0</span><span class="about-stat-label">Google Maps</span></div>
-            </div>
-          </div>
-          <div class="about-story-images reveal-right">
-            <div style="display:flex;flex-direction:column;gap:var(--space-8);">
-              <div style="position:relative;width:100%;">
-                <img src="about/images/historia-v2-02.png" alt="Interior da Loja" class="about-img" onerror="this.style.display='none'">
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);">
-                <img src="about/images/historia-v2-01.png" alt="Logo e Buquê" class="about-img" onerror="this.style.display='none'">
-                <img src="about/images/historia-v2-03.png" alt="Cliente com Flores" class="about-img" onerror="this.style.display='none'">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
 
-    <section class="testimonials-full-section" id="depoimentos">
-      <div class="container">
-        <div class="section-header reveal-title">
-          <span class="section-eyebrow">O que dizem nossos clientes</span>
-          <h2 class="section-title">Depoimentos</h2>
-        </div>
-        <div class="testimonials-prints-grid reveal-stagger" style="max-width:960px;margin:0 auto var(--space-16);">
-          <div class="testimonial-print-card">
-            <div class="testimonial-print"><img src="testimonials/images/depoimento-01.png" alt="Depoimento 1" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #01</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
-          </div>
-          <div class="testimonial-print-card">
-            <div class="testimonial-print"><img src="testimonials/images/depoimento-02.png" alt="Depoimento 2" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #02</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
-          </div>
-          <div class="testimonial-print-card">
-            <div class="testimonial-print"><img src="testimonials/images/depoimento-03.png" alt="Depoimento 3" class="testimonial-print-img" onerror="this.parentElement.innerHTML='<div class=testimonial-print-placeholder style=padding:4rem;text-align:center;background:var(--lavender-ultra);><div style=font-size:3rem;margin-bottom:1rem;>⭐⭐⭐⭐⭐</div><p style=font-size:1rem;color:var(--text-medium);>Depoimento #03</p><small style=color:var(--text-light);>Print do WhatsApp</small></div>'"></div>
-          </div>
-        </div>
-        <div class="reveal-up" style="text-align:center;">
-          <p style="font-size:var(--text-sm);color:var(--text-light);margin-bottom:var(--space-6);">Veja todas as avaliações no Google</p>
-          <a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" class="btn btn-outline">★ Ver avaliações no Google Maps</a>
-        </div>
-      </div>
-    </section>
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
 
-    <section class="find-us-section">
-      <div class="container">
-        <div class="section-header reveal-title">
-          <span class="section-eyebrow">Visite-nos</span>
-          <h2 class="section-title">Encontre a Gente</h2>
-        </div>
-        <div class="find-us-grid">
-          <div class="find-us-info reveal-left">
-            <div class="contact-block">
-              <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="contact-btn contact-btn-whatsapp">
-                <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:var(--whatsapp);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-                <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;">(11) 91847-5136</strong><span style="font-size:var(--text-sm);color:var(--text-medium);">WhatsApp · Clique para falar</span></div>
-              </a>
-            </div>
-            <div class="contact-block">
-              <a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="contact-btn contact-btn-instagram">
-                <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:var(--instagram-gradient);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
-                <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;">@tmfloreseplantas</strong><span style="font-size:var(--text-sm);color:var(--text-medium);">Instagram · Nos siga</span></div>
-              </a>
-            </div>
-            <div class="contact-block contact-address">
-              <span class="contact-address-icon">📍</span>
-              <div><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;margin-bottom:var(--space-2);">Nossa Localização</strong>
-              <p>Subsolo · Shopping Central Park Cotia<br>Av. Ivo Mário Isaac Pires, 4040<br>Tijuco Preto, Vargem Grande Paulista — SP<br>CEP: 06741-128</p>
-              <a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" style="color:var(--gold-text);font-weight:600;font-size:var(--text-sm);">Abrir no Google Maps →</a></div>
-            </div>
-            <div class="contact-block contact-hours">
-              <span class="contact-hours-icon">🕐</span>
-              <div style="flex-grow:1;"><strong style="font-size:var(--text-xl);font-weight:700;color:var(--text-dark);display:block;margin-bottom:var(--space-4);">Horário de Atendimento</strong>
-              <div class="hours-table"><div class="hours-row"><span class="hours-day">Segunda a Sábado</span><span class="hours-time">10h às 22h</span></div><div class="hours-row"><span class="hours-day">Domingo</span><span class="hours-time">12h às 20h</span></div></div></div>
-            </div>
-          </div>
-          <div class="find-us-map" style="height:100%;min-height:400px;">
-            <div class="map-wrapper" style="height:100%;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="TM Flores no Google Maps"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
 
-    <footer class="site-footer">
-    <div class="footer-top">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo-link">
-            <img src="logo.png" alt="TM Flores e Plantas" class="footer-logo">
-            <span class="footer-title-text">TM FLORES</span>
-          </a>
-          <p class="footer-about-text">Especialistas em buquês artesanais e plantas ornamentais. Levando beleza e emoção para Cotia e região desde 2024.</p>
-        </div>
-        <div class="footer-links">
-          <h3 class="footer-heading">Navegação</h3>
-          <ul><li><a href="index.html">Início</a></li><li><a href="buques.html">🌹 Buquês</a></li><li><a href="plantas.html">🌿 Plantas</a></li><li><a href="encomendas.html">Encomendas Personalizadas</a></li><li><a href="sobre.html">Sobre a Loja</a></li></ul>
-        </div>
-        <div>
-          <h3 class="footer-heading">Contato</h3>
-          <div class="footer-contact-item"><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" style="color:var(--whatsapp);font-weight:700;">+55 11 91847-5136</a></div>
-          <div class="footer-contact-item"><p style="margin:0;line-height:1.6;">Shopping Central Park Cotia<br>Subsolo · Vargem Grande Paulista - SP</p></div>
-          <div class="footer-hours"><h4 class="footer-hours-title">Horário</h4><p>Segunda a Sábado: <strong>10h às 22h</strong></p><p>Domingo: <strong>12h às 20h</strong></p></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom"><p>© 2026 TM Flores e Plantas. Todos os direitos reservados.</p></div>
-  </footer>
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
 
-  <div class="page-transition-overlay" id="pageTransitionOverlay"></div>
-  <div class="float-whatsapp" id="floatWhatsApp">
-    <a href="https://wa.me/5511918475136" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-  </div>
+	#lovable-badge-text {
+		line-height: 1;
+	}
 
-  <script src="js/reveal.js" defer></script>
-  <script src="js/main.js" defer></script>
-</body>
-</html>
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer="" src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer="" src="/__l5e/events.js" data-artifact-kind="dwl_content_hash" data-artifact-id="130d669c9fc13b248fe42f487c9292aedb7f4f786ca73c77f5b226b8f9d1e098" data-commit-sha="a73d6605a36cc1264fe3889c1f9a759187624c0e" data-context-token="v1.eyJwcm9qZWN0X2lkIjoiNzkyZjhjNmYtYzA1MC00NDIyLThmMjUtMTNhNmFjMmY3MWRmIiwiYXJ0aWZhY3Rfa2luZCI6ImR3bF9jb250ZW50X2hhc2giLCJhcnRpZmFjdF9pZCI6IjEzMGQ2NjljOWZjMTNiMjQ4ZmU0MmY0ODdjOTI5MmFlZGI3ZjRmNzg2Y2E3M2M3N2Y1YjIyNmI4ZjlkMWUwOTgiLCJjb21taXRfc2hhIjoiYTczZDY2MDVhMzZjYzEyNjRmZTM4ODljMWY5YTc1OTE4NzYyNGMwZSIsImV4cCI6MTc4MTk5NzYxNX0.2mAbC2dgDm06KeQLv0W6_OTICRG9q8ajZeasxJa1qJg" data-replay="rrweb" data-replay-sample-rate="0.1" data-replay-crash-sample-rate="0.1" data-replay-url="/__l5e/replay" data-replay-script-url="/__l5e/rrweb-record.js?__l5e_v=0.1.2-error-event-hardening"></script></head><body class="bg-[#FAF5EC] min-h-screen overflow-x-hidden"><div class="relative min-h-screen" id="root-container"><div class="bg-orbs-container" aria-hidden="true"><div class="orb orb-1 fixed top-[-150px] right-[-100px] bg-radial-gradient from-[rgba(149,106,192,0.11)] to-transparent blur-[55px]" style="width:520px;height:520px;animation:orb-animation-1 9s ease-in-out infinite alternate"></div><div class="orb orb-2 fixed bottom-[8%] left-[-80px] bg-radial-gradient from-[rgba(196,168,220,0.09)] to-transparent blur-[55px]" style="width:460px;height:460px;animation:orb-animation-2 12s ease-in-out infinite alternate;animation-delay:-5s"></div><div class="orb orb-3 fixed top-[42%] right-[14%] bg-radial-gradient from-[rgba(201,160,64,0.06)] to-transparent blur-[55px]" style="width:340px;height:340px;animation:orb-animation-3 15s ease-in-out infinite alternate;animation-delay:-8s"></div></div><style>
+            @keyframes orb-animation-1 {
+              0% { transform: scale(1) translateY(0); }
+              100% { transform: scale(1.18) translateY(-22px); }
+            }
+            @keyframes orb-animation-2 {
+              0% { transform: scale(1) translateY(0); }
+              100% { transform: scale(1.15) translateY(-15px); }
+            }
+            @keyframes orb-animation-3 {
+              0% { transform: scale(1) translateY(0); }
+              100% { transform: scale(1.12) translateY(-10px); }
+            }
+          </style><!--$--><main class="min-h-screen"><header class="fixed top-0 left-0 w-full z-[100] transition-all duration-500 overflow-x-hidden py-6 opacity-0 -translate-y-full pointer-events-none"><div class="container mx-auto px-4 md:px-6 flex items-center justify-between"><a href="/" class="flex items-center gap-2 group"><div class="relative overflow-hidden rounded-full aspect-square flex items-center justify-center bg-white shadow-sm border-0 w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110"><img src="/logo.png?v=35" alt="TM Flores e Plantas Logo" class="w-full h-full object-cover scale-[1.01] pointer-events-none select-none"></div><span class="text-xl md:text-2xl font-serif font-bold gold-text tracking-wider hidden sm:block">TM FLORES</span></a><nav class="hidden lg:flex items-center gap-8"><div class="relative group"><a href="/" class="font-sans font-semibold text-text-dark hover:text-purple-main transition-colors uppercase text-sm tracking-wide">Início</a></div><div class="relative group"><button class="flex items-center gap-1 font-sans font-semibold text-text-dark hover:text-purple-main transition-colors uppercase text-sm tracking-wide">Produtos<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div><div class="relative group"><a href="/encomendas" class="font-sans font-semibold text-text-dark hover:text-purple-main transition-colors uppercase text-sm tracking-wide">Encomendas</a></div><div class="relative group"><a class="font-sans font-semibold text-text-dark hover:text-purple-main transition-colors uppercase text-sm tracking-wide active" href="/sobre" data-status="active" aria-current="page">Sobre a Loja</a></div></nav><div class="hidden lg:flex items-center gap-4"><a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="p-2 text-white bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#F77737] rounded-lg hover:scale-110 transition-transform shadow-sm" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="btn-whatsapp text-xs py-2 px-5 flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>WhatsApp</a></div><button class="lg:hidden p-2 text-text-dark w-[44px] h-[44px] flex items-center justify-center relative right-[-16px]" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></header><div class="fixed inset-0 z-[200] lg:hidden transition-opacity duration-300 opacity-0 pointer-events-none"><div class="absolute inset-0 bg-[#FAF5EC] transition-transform duration-500 ease-silk p-8 flex flex-col z-[201] translate-x-full"><button class="self-end p-2 text-text-medium w-[44px] h-[44px] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button><nav class="mt-12 flex flex-col gap-8"><div class="flex flex-col gap-6"><a href="/" class="font-serif text-[22px] font-bold text-text-dark hover:text-purple-main">Início</a></div><div class="flex flex-col gap-6"><div class="flex flex-col gap-6"><a href="/buques" class="font-serif text-[22px] font-bold text-text-dark hover:text-purple-main">Buquês</a><a href="/plantas" class="font-serif text-[22px] font-bold text-text-dark hover:text-purple-main">Plantas</a></div></div><div class="flex flex-col gap-6"><a href="/encomendas" class="font-serif text-[22px] font-bold text-text-dark hover:text-purple-main">Encomendas</a></div><div class="flex flex-col gap-6"><a class="font-serif text-[22px] font-bold text-text-dark hover:text-purple-main active" href="/sobre" data-status="active" aria-current="page">Sobre a Loja</a></div></nav><div class="mt-auto flex flex-col gap-4"><a href="https://wa.me/5511918475136" class="btn-whatsapp justify-center py-4 w-full flex items-center gap-2" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>Falar no WhatsApp</a><a href="https://www.instagram.com/tmfloreseplantas" class="btn-instagram justify-center py-4 w-full flex items-center gap-2" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Seguir no Instagram</a></div></div></div><section class="about-hero pt-48 pb-32 bg-purple-deep relative overflow-hidden text-center"><div class="container mx-auto px-6 relative z-10 about-hero-content reveal-fade active"><span class="section-eyebrow text-gold-main font-sans font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Conheça nossa história</span><h1 class="about-hero-title font-serif text-5xl md:text-8xl font-light text-white leading-tight mb-8">Sobre a<br><em class="gold-text italic">TM Flores e Plantas</em></h1><p class="about-hero-lead font-script text-2xl md:text-4xl text-lavender-light">Nascemos de um sonho. Crescemos com amor. E estamos aqui para florescer junto com você.</p></div><div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none"><div class="absolute top-[-10%] left-[-5%] w-96 h-96 bg-purple-main blur-[120px] rounded-full animate-pulse"></div><div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gold-main blur-[120px] rounded-full animate-pulse" style="animation-delay:2s"></div></div><div class="about-hero-wave absolute bottom-[-1px] left-0 w-full leading-[0]"><svg viewBox="0 0 1440 80" class="w-full h-auto" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FAF5EC"></path></svg></div></section><section class="about-story-section py-24 bg-cream"><div class="container mx-auto px-6"><div class="about-story-grid grid grid-cols-1 lg:grid-cols-2 gap-20 items-start"><div class="about-story-text reveal-left active"><span class="section-eyebrow text-gold-main font-sans font-bold uppercase tracking-widest text-xs mb-4 block">Nossa história</span><h2 class="section-title text-3xl md:text-5xl font-serif font-bold text-purple-deep leading-tight mb-10 text-left">Fundada com amor,<br>cultivada com paixão</h2><div class="about-story-content space-y-6 text-lg text-text-medium leading-relaxed mb-12"><p>Fundada em 2024, nossa floricultura nasceu da realização de um sonho cultivado com amor, dedicação e a paixão pela beleza que a natureza oferece.</p><p>Acreditamos que as flores têm o poder de transmitir sentimentos, criar memórias e tornar cada momento mais especial.</p><p>Com sensibilidade e cuidado, levamos beleza e emoção para a vida das pessoas, florescendo histórias e fortalecendo laços. 🌻</p></div><blockquote class="about-story-quote border-l-4 border-gold-main bg-lavender-ultra/30 p-8 rounded-r-2xl mb-12"><p class="font-script text-3xl text-purple-main leading-relaxed">"Florescendo histórias<br>e fortalecendo laços."</p></blockquote><div class="about-story-stats flex flex-wrap gap-12 items-center"><div class="about-stat text-center"><span class="about-stat-number block font-serif text-4xl font-bold text-purple-deep">2024</span><span class="about-stat-label text-xs uppercase tracking-widest text-text-light font-bold">Fundação</span></div><div class="about-stat-divider w-px h-12 bg-cream-dark hidden sm:block"></div><div class="about-stat text-center"><span class="about-stat-number block font-serif text-4xl font-bold text-purple-deep">100%</span><span class="about-stat-label text-xs uppercase tracking-widest text-text-light font-bold">Flores Frescas</span></div><div class="about-stat-divider w-px h-12 bg-cream-dark hidden sm:block"></div><div class="about-stat text-center"><span class="about-stat-number block font-serif text-4xl font-bold text-purple-deep">★ 5.0</span><span class="about-stat-label text-xs uppercase tracking-widest text-text-light font-bold">Google Maps</span></div></div></div><div class="about-story-images reveal-right active"><div class="flex flex-col gap-10"><div class="relative w-full"><img src="/about/images/historia-v2-02.png" class="w-full h-auto rounded-3xl shadow-2xl block border border-gold-main/10" alt="Interior da Loja"><div class="overflow-hidden rounded-full aspect-square flex items-center justify-center bg-white absolute top-6 left-6 w-16 h-16 md:w-24 md:h-24 opacity-95 shadow-xl border border-white/40"><img src="/logo.png?v=35" alt="TM Flores e Plantas Logo" class="w-full h-full object-cover scale-[1.01] pointer-events-none select-none"></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-10"><div class="w-full"><img src="/about/images/historia-v2-01.png" class="w-full h-auto rounded-3xl shadow-xl block border border-gold-main/10" alt="Logo e Buquê"></div><div class="w-full"><img src="/about/images/historia-v2-03.png" class="w-full h-auto rounded-3xl shadow-xl block border border-gold-main/10" alt="Cliente com Flores"></div></div></div></div></div></div></section><section class="testimonials-full-section py-24 bg-cream-warm" id="depoimentos"><div class="container mx-auto px-6"><div class="section-header text-center mb-16 reveal-title active"><span class="section-eyebrow text-gold-main font-sans font-bold uppercase tracking-widest text-xs mb-4 block">O que dizem nossos clientes</span><h2 class="section-title text-3xl md:text-5xl font-serif font-bold text-purple-deep leading-tight">Depoimentos</h2></div><div class="testimonials-prints-grid grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 reveal-stagger max-w-5xl mx-auto active"><div class="testimonial-print-card bg-white rounded-3xl overflow-hidden shadow-xl hover:translate-y-[-8px] transition-all duration-300 cursor-pointer border border-gold-main/10 ring-8 ring-white/50"><div class="relative group"><div class="absolute inset-0 bg-purple-deep/5 group-hover:bg-transparent transition-colors duration-300"></div><img src="/testimonials/images/depoimento-01.png" alt="Print depoimento 01" class="w-full h-auto object-contain relative z-10 p-2"><div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-gold-main shadow-sm z-20 border border-gold-main/20">DEPOIMENTO #0<!-- -->1</div></div></div><div class="testimonial-print-card bg-white rounded-3xl overflow-hidden shadow-xl hover:translate-y-[-8px] transition-all duration-300 cursor-pointer border border-gold-main/10 ring-8 ring-white/50"><div class="relative group"><div class="absolute inset-0 bg-purple-deep/5 group-hover:bg-transparent transition-colors duration-300"></div><img src="/testimonials/images/depoimento-02.png" alt="Print depoimento 02" class="w-full h-auto object-contain relative z-10 p-2"><div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-gold-main shadow-sm z-20 border border-gold-main/20">DEPOIMENTO #0<!-- -->2</div></div></div><div class="testimonial-print-card bg-white rounded-3xl overflow-hidden shadow-xl hover:translate-y-[-8px] transition-all duration-300 cursor-pointer border border-gold-main/10 ring-8 ring-white/50"><div class="relative group"><div class="absolute inset-0 bg-purple-deep/5 group-hover:bg-transparent transition-colors duration-300"></div><img src="/testimonials/images/depoimento-03.png" alt="Print depoimento 03" class="w-full h-auto object-contain relative z-10 p-2"><div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-gold-main shadow-sm z-20 border border-gold-main/20">DEPOIMENTO #0<!-- -->3</div></div></div></div><div class="testimonials-gmaps-cta text-center reveal-up active"><p class="text-sm text-text-light mb-6">Veja todas as avaliações no Google</p><a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" class="btn btn-outline inline-flex items-center gap-2 border-2 border-purple-deep text-purple-deep px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-purple-deep hover:text-white transition-all">★ Ver avaliações no Google Maps</a></div></div></section><section class="find-us-section py-24 bg-cream"><div class="container mx-auto px-6"><div class="section-header text-center mb-16 reveal-title active"><span class="section-eyebrow text-gold-main font-sans font-bold uppercase tracking-widest text-xs mb-4 block">Visite-nos</span><h2 class="section-title text-3xl md:text-5xl font-serif font-bold text-purple-deep leading-tight">Encontre a Gente</h2></div><div class="find-us-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch"><div class="find-us-info space-y-6 reveal-left active"><div class="contact-block"><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="contact-btn contact-btn-whatsapp flex items-center gap-6 p-8 bg-white rounded-3xl shadow-card hover:shadow-card-hover transition-all border border-gold-main/5 group"><div class="w-14 h-14 bg-whatsapp rounded-2xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></div><div><strong class="text-xl font-bold text-text-dark block">(11) 91847-5136</strong><span class="text-sm text-text-medium">WhatsApp · Clique para falar</span></div></a></div><div class="contact-block"><a href="https://www.instagram.com/tmfloreseplantas" target="_blank" rel="noopener" class="contact-btn contact-btn-instagram flex items-center gap-6 p-8 bg-white rounded-3xl shadow-card hover:shadow-card-hover transition-all border border-gold-main/5 group"><div class="w-14 h-14 bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#F77737] rounded-2xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div><div><strong class="text-xl font-bold text-text-dark block">@tmfloreseplantas</strong><span class="text-sm text-text-medium">Instagram · Nos siga</span></div></a></div><div class="contact-block contact-address p-8 bg-white rounded-3xl shadow-card border border-gold-main/5 flex gap-6"><div class="contact-address-icon text-3xl shrink-0">📍</div><div><strong class="text-xl font-bold text-text-dark block mb-2">Nossa Localização</strong><p class="text-sm text-text-medium leading-relaxed mb-4">Subsolo · Shopping Central Park Cotia<br>Av. Ivo Mário Isaac Pires, 4040<br>Tijuco Preto, Vargem Grande Paulista — SP<br>CEP: 06741-128</p><a href="https://www.google.com/maps/place/TM+Flores+e+Plantas" target="_blank" rel="noopener" class="contact-address-link text-purple-main font-bold text-xs uppercase tracking-widest hover:text-gold-main underline underline-offset-4">Abrir no Google Maps →</a></div></div><div class="contact-block contact-hours p-8 bg-white rounded-3xl shadow-card border border-gold-main/5 flex gap-6"><div class="contact-hours-icon text-3xl shrink-0">🕐</div><div class="flex-grow"><strong class="text-xl font-bold text-text-dark block mb-4">Horário de Atendimento</strong><div class="hours-table space-y-2"><div class="hours-row flex justify-between text-sm"><span class="hours-day text-text-medium">Segunda a Sábado</span><span class="hours-time font-bold text-text-dark">10h às 22h</span></div><div class="hours-row flex justify-between text-sm"><span class="hours-day text-text-medium">Domingo</span><span class="hours-time font-bold text-text-dark">12h às 20h</span></div></div></div></div></div><div class="find-us-map rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white h-[220px] md:h-full min-h-[220px] md:min-h-[400px] reveal-right active"><div class="map-wrapper h-full"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></div></section></main><!--/$--><a href="https://wa.me/5511918475136" target="_blank" rel="noopener" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-[0_4px_20px_rgba(37,211,102,0.4)] z-[999] animate-in fade-in duration-500 hover:scale-110 transition-transform" style="animation: 2.5s ease 0s infinite normal none running pulse-whatsapp;"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg><style>
+        @keyframes pulse-whatsapp {
+          0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+          70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+          100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+      </style></a></div>
+<aside id="lovable-badge" role="complementary" dir="ltr" lang="en" aria-label="Edit with Lovable">
+	<a id="lovable-badge-cta" target="_blank" href="https://lovable.dev/projects/792f8c6f-c050-4422-8f25-13a6ac2f71df?utm_source=lovable-badge" rel="noopener nofollow" aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"></path>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"></path>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"></path>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"></stop>
+      <stop offset=".394" stop-color="#FE3F21"></stop>
+      <stop offset=".608" stop-color="#F858BC"></stop>
+      <stop offset=".929" stop-color="#575ECF"></stop>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button id="lovable-badge-close" aria-label="Dismiss" title="Dismiss" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+</body></html>
