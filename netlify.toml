@@ -1,0 +1,14 @@
+# netlify.toml — coloque na RAIZ do repositório
+[build]
+  command = "bun install && bun run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback: qualquer rota não-encontrada serve o index.html
+# (o React Router / TanStack Router faz a resolução no cliente)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
