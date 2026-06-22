@@ -1,1 +1,10 @@
-/*    /index.html   200
+# Assets estáticos: servidos diretamente do CDN
+/assets/*    /assets/:splat    200
+/products/*  /products/:splat  200
+/about/*     /about/:splat     200
+/testimonials/* /testimonials/:splat 200
+/js/*        /js/:splat        200
+/logo.png    /logo.png         200
+
+# SSR catch-all: qualquer outra rota vai para a função Nitro
+/*           /.netlify/functions/server   200

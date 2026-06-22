@@ -1,14 +1,15 @@
-# netlify.toml — coloque na RAIZ do repositório
 [build]
   command = "bun install && bun run build"
-  publish = "dist/client"
+  publish = "dist"
+  functions = ".netlify/functions-internal"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
-# SPA fallback: qualquer rota não-encontrada serve o index.html
-# (o React Router / TanStack Router faz a resolução no cliente)
+# SSR: todo request vai para a função serverless do Nitro
+# que faz SSR do TanStack Start. Assets estáticos (dist/*)
+# são servidos diretamente pelo CDN da Netlify.
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
