@@ -1,15 +1,8 @@
 [build]
-  command = "bun install && bun run build"
-  publish = "dist"
-  functions = ".netlify/functions-internal"
+  command = "bun run build"
+  publish = "dist/client"
 
-[build.environment]
-  NODE_VERSION = "22"
-
-# SSR: todo request vai para a função serverless do Nitro
-# que faz SSR do TanStack Start. Assets estáticos (dist/*)
-# são servidos diretamente pelo CDN da Netlify.
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
