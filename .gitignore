@@ -9,8 +9,20 @@ node_modules/
 site-tm-flores/node_modules/
 
 # Build output
-site-tm-flores/dist/
-site-tm-flores/.vinxi/
+dist/
+node_modules/
+.vinxi/
+
+# Screenshots
+screenshots/
+
+# Temp scripts
+*.mjs
+
+# Lock files (use Bun)
+pnpm-lock.yaml
+pnpm-workspace.yaml
+yarn.lock
 
 # OS
 .DS_Store
