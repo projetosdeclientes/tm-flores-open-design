@@ -36,6 +36,10 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Temp correction packages
+tmp_*/
+*.zip
+
 # Open Design artifacts
 .od-skills/
 site-tm-flores/
