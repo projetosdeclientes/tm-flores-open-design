@@ -38,12 +38,6 @@ function PlantasPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  useEffect(() => {
-    if (typeof window.initProductCarousels === 'function') {
-      window.initProductCarousels()
-    }
-  }, [])
-
   return (
     <main className="min-h-screen">
       <Navbar />

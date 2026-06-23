@@ -12,7 +12,6 @@ export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
-    setIsScrolled(window.scrollY > 60);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 60);
     };
@@ -39,7 +38,7 @@ export function Navbar() {
         className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 overflow-x-hidden ${
           isScrolled 
             ? "glass-nav py-3 opacity-100 translate-y-0" 
-            : "py-6 opacity-100 translate-y-0"
+            : "py-6 opacity-0 -translate-y-full pointer-events-none"
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">

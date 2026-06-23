@@ -89,11 +89,6 @@ function RootShell({ children }: { children: ReactNode }) {
           {children}
           <WhatsappFloating />
         </div>
-        <script src="/js/hero-carousel.js" defer></script>
-        <script src="/js/product-carousel.js" defer></script>
-        <script src="/js/reveal.js" defer></script>
-        <script src="/js/tilt-3d.js" defer></script>
-        <script src="/js/main.js" defer></script>
         <Scripts />
       </body>
 

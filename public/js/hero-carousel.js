@@ -81,14 +81,8 @@ class HeroCarousel {
   }
 }
 
-function initHeroCarousel() {
-  new HeroCarousel();
-}
-
-window.initHeroCarousel = initHeroCarousel;
-
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initHeroCarousel);
+  document.addEventListener('DOMContentLoaded', () => new HeroCarousel());
 } else {
-  initHeroCarousel();
+  new HeroCarousel();
 }

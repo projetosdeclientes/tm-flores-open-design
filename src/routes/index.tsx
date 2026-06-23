@@ -4,9 +4,9 @@ import { products } from '@/data/products'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { ProductCard, MoreCard } from '@/components/ProductCard'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Star } from 'lucide-react'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { LogoCircle } from '@/components/LogoCircle'
 
 
@@ -61,23 +61,51 @@ function Hero() {
     }
   ]
 
+  const [current, setCurrent] = useState(0)
+  const [touchStart, setTouchStart] = useState<number | null>(null)
+  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+
+  const minSwipeDistance = 50
+
   useEffect(() => {
-    window.initHeroCarousel?.()
-    return () => {
-      const track = document.getElementById('heroTrack')
-      if (track) track.style.transform = ''
-    }
-  }, [])
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length)
+    }, 6000)
+    return () => clearInterval(timer)
+  }, [slides.length])
+
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length)
+  const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null)
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const onTouchMove = (e: React.TouchEvent) => setTouchEnd(e.targetTouches[0].clientX)
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > minSwipeDistance
+    const isRightSwipe = distance < -minSwipeDistance
+    if (isLeftSwipe) nextSlide()
+    if (isRightSwipe) prevSlide()
+  }
 
   return (
     <section 
       className="relative h-[65vh] min-h-[480px] md:h-[90vh] overflow-hidden bg-text-dark hero-carousel group/hero"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
     >
-      <div id="heroTrack" className="flex h-full">
-      {slides.map((slide) => (
+      {slides.map((slide, idx) => (
         <div
-          key={slide.image}
-          className="hero-slide w-full h-full shrink-0"
+          key={idx}
+          className={`absolute inset-0 transition-all duration-1000 ease-silk hero-slide ${
+            idx === current ? "opacity-100 scale-105 z-20" : "opacity-0 scale-100 z-10 pointer-events-none"
+          }`}
         >
           <div className={`absolute inset-0 z-10 ${slide.overlay}`} />
           <img
@@ -116,17 +144,18 @@ function Hero() {
           </div>
         </div>
       ))}
-      </div>
 
       {/* Navigation Arrows */}
       <button 
-        className="hero-arrow-prev absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/20 text-white flex items-center justify-center backdrop-blur-sm hover:bg-white hover:text-text-dark transition-all duration-300 md:opacity-0 md:group-hover/hero:opacity-100"
+        onClick={prevSlide}
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/20 text-white flex items-center justify-center backdrop-blur-sm hover:bg-white hover:text-text-dark transition-all duration-300 md:opacity-0 md:group-hover/hero:opacity-100"
         aria-label="Slide anterior"
       >
         <ArrowRight size={24} className="rotate-180" />
       </button>
       <button 
-        className="hero-arrow-next absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/20 text-white flex items-center justify-center backdrop-blur-sm hover:bg-white hover:text-text-dark transition-all duration-300 md:opacity-0 md:group-hover/hero:opacity-100"
+        onClick={nextSlide}
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/20 text-white flex items-center justify-center backdrop-blur-sm hover:bg-white hover:text-text-dark transition-all duration-300 md:opacity-0 md:group-hover/hero:opacity-100"
         aria-label="Próximo slide"
       >
         <ArrowRight size={24} />
@@ -137,10 +166,13 @@ function Hero() {
         {slides.map((_, idx) => (
           <button
             key={idx}
+            onClick={() => setCurrent(idx)}
             className="w-12 h-[44px] flex items-center justify-center cursor-pointer hero-dot-container group/dot"
             aria-label={`Ir para slide ${idx + 1}`}
           >
-             <div className="h-1 rounded-full transition-all duration-500 hero-dot" />
+             <div className={`h-1 rounded-full transition-all duration-500 hero-dot ${
+              idx === current ? "bg-gold-main w-16" : "bg-white/30 w-8 group-hover/dot:bg-white/60"
+            }`} />
           </button>
         ))}
       </div>
@@ -176,11 +208,8 @@ function Index() {
     products.find(p => p.id === "buque-15-rosas")!
   ];
 
-  useEffect(() => {
-    if (typeof window.initProductCarousels === 'function') {
-      window.initProductCarousels()
-    }
-  }, [])
+
+
 
   return (
     <main className="min-h-screen">

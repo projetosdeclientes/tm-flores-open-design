@@ -54,7 +54,7 @@ function SobrePage() {
       {/* Nossa História */}
       <section className="about-story-section py-24 bg-cream">
         <div className="container mx-auto px-6">
-          <div className="about-story-grid grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="about-story-grid grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <div className="about-story-text reveal-left">
               <span className="section-eyebrow text-gold-main font-sans font-bold uppercase tracking-widest text-xs mb-4 block">
                 Nossa história
