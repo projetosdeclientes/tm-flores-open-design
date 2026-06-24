@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "sobre/index.html",
+  "entry": "sobre/index.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-24T22:25:52.000Z",
+  "updatedAt": "2026-06-24T22:25:52.000Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}
