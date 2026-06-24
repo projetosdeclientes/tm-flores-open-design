@@ -1,0 +1,5 @@
+# Netlify pretty URLs — serve /buques/slug/index.html when /buques/slug requested
+/buques/*  /buques/:splat/index.html  200
+/plantas/* /plantas/:splat/index.html 200
+# Fallback
+/*  /index.html  200
