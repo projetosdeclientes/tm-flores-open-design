@@ -1,8 +1,18 @@
+const REVEAL_SELECTOR = '[class*="reveal"]';
+
+function activateAll() {
+  document.querySelectorAll(REVEAL_SELECTOR).forEach(el => {
+    if ([...el.classList].some(c => c.startsWith('reveal'))) {
+      el.classList.add('active');
+    }
+  });
+}
+
 function initReveal() {
-  const elements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const elements = Array.from(document.querySelectorAll(REVEAL_SELECTOR))
+    .filter(el => [...el.classList].some(c => c.startsWith('reveal')));
   if (!elements.length) return;
 
-  // Fallback: se IO não existir, mostra tudo
   if (!('IntersectionObserver' in window)) {
     elements.forEach(el => el.classList.add('active'));
     return;
@@ -15,10 +25,9 @@ function initReveal() {
         observer.unobserve(entry.target);
       }
     });
-  }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+  }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
 
   elements.forEach(el => {
-    // Elementos já visíveis no carregamento (acima da dobra) ativam imediatamente
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
       el.classList.add('active');
@@ -27,11 +36,7 @@ function initReveal() {
     }
   });
 
-  // Garantia: depois de 1.5s, qualquer reveal ainda inativo é ativado
-  setTimeout(() => {
-    document.querySelectorAll('.reveal:not(.active), .reveal-left:not(.active), .reveal-right:not(.active), .reveal-scale:not(.active)')
-      .forEach(el => el.classList.add('active'));
-  }, 1500);
+  setTimeout(activateAll, 1200);
 }
 
 function bootReveal() {
@@ -44,12 +49,6 @@ function bootReveal() {
 
 bootReveal();
 
-// CRÍTICO: bfcache — ao voltar pelo botão "voltar", DOMContentLoaded não dispara.
-// pageshow com event.persisted=true indica restauração do bfcache.
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted) {
-    // Reset: re-ativar todos para garantir que aparecem
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
-      .forEach(el => el.classList.add('active'));
-  }
+window.addEventListener('pageshow', () => {
+  activateAll();
 });
