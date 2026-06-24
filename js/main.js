@@ -66,25 +66,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 5. TRANSIÇÃO ENTRE PÁGINAS ───────────────────────────────────
   const transitionOverlay = document.getElementById('pageTransitionOverlay');
   if (transitionOverlay) {
-    transitionOverlay.classList.remove('entering');
-
     document.querySelectorAll('a[href]').forEach(link => {
       const href = link.getAttribute('href');
+      // Apenas links internos .html (não âncoras, não externos)
       if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.includes('__lovable_token')) return;
 
       link.addEventListener('click', e => {
-        if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+        // Ignorar se abrir em nova aba
+        if (e.metaKey || e.ctrlKey) return;
+        
         e.preventDefault();
         const dest = link.href;
         transitionOverlay.classList.add('entering');
-        const failsafe = setTimeout(() => transitionOverlay.classList.remove('entering'), 1000);
-        setTimeout(() => {
-          clearTimeout(failsafe);
-          window.location.href = dest;
-        }, 450);
+        setTimeout(() => { window.location.href = dest; }, 550);
       });
     });
 
+    // Ao carregar nova página: fade out do overlay
     window.addEventListener('pageshow', () => {
       transitionOverlay.classList.remove('entering');
     });
