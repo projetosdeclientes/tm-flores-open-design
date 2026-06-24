@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "encomendas.html",
+  "entry": "encomendas.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-24T20:07:55.742Z",
+  "updatedAt": "2026-06-24T20:07:55.742Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

@@ -1,0 +1,21 @@
+$ vite dev
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
+Error: ENOENT: no such file or directory, scandir 'C:\Users\Luigi\AppData\Roaming\Open Design\namespaces\release-stable-win\data\projects\1c6c718b-0207-42af-930a-f2d868f14630\src\routes'
+    at file:///C:/Users/Luigi/AppData/Roaming/Open%20Design/namespaces/release-stable-win/data/projects/1c6c718b-0207-42af-930a-f2d868f14630/node_modules/@tanstack/router-generator/dist/esm/generator.js:143:13
