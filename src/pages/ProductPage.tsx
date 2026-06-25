@@ -87,10 +87,10 @@ export function ProductPage() {
             <Link to="/" className="hover:text-purple-main transition-colors">Início</Link>
             <span>&gt;</span>
             <Link 
-              to={product.category === 'plantas' ? '/plantas' : '/buques'} 
+              to={product.category === 'plantas' ? '/plantas' : product.category === 'cestas-chocolates' ? '/cestas-chocolates' : '/buques'} 
               className="hover:text-purple-main transition-colors"
             >
-              {product.category === 'plantas' ? 'Plantas' : 'Buquês'}
+              {product.category === 'plantas' ? 'Plantas' : product.category === 'cestas-chocolates' ? 'Cestas & Chocolates' : 'Buquês'}
             </Link>
             <span>&gt;</span>
             <span className="font-semibold text-text-dark">{product.name}</span>

@@ -4,7 +4,7 @@ export interface Product {
   description: string;
   price: string;
   images: string[];
-  category: 'buques' | 'plantas' | 'buques-mistos';
+  category: 'buques' | 'plantas' | 'buques-mistos' | 'cestas-chocolates';
   tagline?: string;
   badge?: string;
 }
@@ -183,5 +183,15 @@ export const products: Product[] = [
     price: "Sob consulta",
     images: ["/products/images/buque-misto-sol-radiante-1.png", "/products/images/buque-misto-sol-radiante-2.png", "/products/images/buque-misto-sol-radiante-3.png"],
     category: 'buques-mistos'
+  },
+  {
+    id: "cesta-cafe-chocolates",
+    name: "Cesta Café & Chocolates",
+    tagline: "O presente perfeito para os amantes de café e chocolate.",
+    badge: "✦ Especial",
+    description: "Uma combinação irresistível para os amantes de café e chocolate. Esta cesta reúne um café especial selecionado, acompanhado de chocolates finos e deliciosos, embalados com carinho em uma cesta decorativa. O presente ideal para aniversários, dia dos namorados, dia das mães, ou simplesmente para surpreender alguém especial com um gesto doce e acolhedor.",
+    price: "Sob consulta",
+    images: ["/products/images/cesta-cafe-chocolates-1.png"],
+    category: 'cestas-chocolates'
   },
 ];
