@@ -52,3 +52,6 @@ ${APPDATA}/
 # Debug output
 dev_test_err.txt
 dev_test_out.txt
+
+# Temporary uploaded images
+mqty*-image.png
