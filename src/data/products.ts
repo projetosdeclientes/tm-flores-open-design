@@ -190,7 +190,7 @@ export const products: Product[] = [
     tagline: "Uma declaração doce em formato de coração com os bombons mais amados do Brasil.",
     description: "Caixa especial em formato de coração dividida em duas bandas irresistíveis: de um lado, os clássicos bombons Ouro Branco com seu recheio cremoso de chocolate branco e castanhas; do outro, os inconfundíveis Sonho de Valsa, com wafer crocante e recheio de avelãs. Uma combinação perfeita para presentear quem você ama em datas românticas, aniversários, Dia dos Namorados, Dia das Mães ou simplesmente para transformar um dia comum em um momento inesquecível.",
     price: "R$ 79,90",
-    images: ["/products/images/cesta-cafe-chocolates-1.png"],
+    images: ["/products/images/cesta-cafe-chocolates-1.png", "/products/images/cesta-cafe-chocolates-2.png"],
     category: 'cestas-chocolates'
   },
 ];
