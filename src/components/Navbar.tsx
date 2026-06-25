@@ -100,7 +100,7 @@ export function Navbar() {
                       initial={{ opacity: 0, y: -8, scale: 0.96 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                      transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+                      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                       style={{ transformOrigin: "top center" }}
                     >
                       <div className="bg-white rounded-lg shadow-lg border border-gold-main/20 overflow-hidden">
@@ -109,7 +109,7 @@ export function Navbar() {
                             key={item.name}
                             initial={{ opacity: 0, x: -6 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.05 + i * 0.05, duration: 0.2 }}
+                            transition={{ delay: 0.05 + i * 0.08, duration: 0.28 }}
                           >
                             <Link
                               to={item.to}
