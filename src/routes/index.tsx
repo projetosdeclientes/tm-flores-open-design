@@ -314,7 +314,7 @@ function Index() {
         <div aria-hidden="true" className="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] rounded-full bg-gold-main/10 blur-3xl" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[5fr_4fr] gap-12 lg:gap-16 items-center">
             <div className="reveal-right">
               <span className="inline-flex items-center gap-2 text-gold-main font-sans font-bold uppercase tracking-[0.25em] text-xs mb-5">
                 <Leaf size={14} /> Estufa TM Flores
