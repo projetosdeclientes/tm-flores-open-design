@@ -29,6 +29,7 @@ export default function AnimatedText({
   animateY = 0,
   animateOpacity = 1,
   highlightWords = {},
+  style,
 }: AnimatedTextProps) {
   const containerVariants = {
     hidden: { opacity: 0 },
