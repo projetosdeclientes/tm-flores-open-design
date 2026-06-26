@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface AnimatedTextProps {
   text: string;
@@ -31,6 +32,9 @@ export default function AnimatedText({
   highlightWords = {},
   style,
 }: AnimatedTextProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -108,12 +112,12 @@ export default function AnimatedText({
 
   return (
     <motion.div
+      ref={ref}
       className={className}
       style={style}
       variants={containerVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }}
+      animate={isInView ? "visible" : "hidden"}
     >
       {animationType === "letters" ? renderLetters() : renderWords()}
     </motion.div>
