@@ -328,7 +328,7 @@ function Index() {
 
             <AnimatedText
               text="Plantas vivas, cuidadas à mão."
-              className="font-serif text-4xl md:text-6xl italic font-light leading-[1.05] mb-6 text-purple-deep"
+              className="font-display text-4xl md:text-6xl font-semibold leading-[1.08] mb-6 text-purple-deep"
               animationType="words"
               staggerDelay={0.12}
               duration={0.5}
