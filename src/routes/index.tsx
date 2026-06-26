@@ -316,7 +316,7 @@ function Index() {
             alt="Fundo estufa TM Flores"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/70" />
+          <div className="absolute inset-0 bg-white/85" />
         </div>
 
         <div className="container mx-auto px-6 relative z-10 py-24">
@@ -324,11 +324,11 @@ function Index() {
             <span className="inline-flex items-center gap-2 text-gold-main font-sans font-bold uppercase tracking-[0.25em] text-xs mb-5 reveal-up">
               <Leaf size={14} /> Estufa TM Flores
             </span>
-            <h2 className="font-serif text-4xl md:text-6xl italic font-light text-purple-deep leading-[1.05] mb-6 reveal-up">
+            <h2 className="font-serif text-4xl md:text-6xl italic font-light text-purple-deep leading-[1.05] mb-6 drop-shadow-sm reveal-up">
               Plantas <span className="text-[#6B8E5A]">vivas</span>,<br />
               cuidadas <span className="text-gold-main">à mão</span>.
             </h2>
-            <p className="font-script text-3xl md:text-4xl text-purple-main mb-6 leading-snug reveal-up">
+            <p className="font-script text-3xl md:text-4xl text-purple-main mb-6 leading-snug drop-shadow-sm reveal-up">
               "Onde o verde encontra o romântico."
             </p>
             <p className="text-lg text-text-medium leading-relaxed mb-10 max-w-xl mx-auto reveal-up">
