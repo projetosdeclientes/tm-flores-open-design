@@ -9,6 +9,7 @@ import { Leaf } from 'lucide-react'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { useEffect, useState } from 'react'
 import estufaHome from '@/assets/plantas/estufa-home.jpg'
+import AnimatedText from '@/components/ui/animated-text'
 
 
 export const Route = createFileRoute('/')({
@@ -316,7 +317,7 @@ function Index() {
             alt="Fundo estufa TM Flores"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/85" />
+          <div className="absolute inset-0 bg-white/88" />
         </div>
 
         <div className="container mx-auto px-6 relative z-10 py-24">
@@ -324,11 +325,24 @@ function Index() {
             <span className="inline-flex items-center gap-2 text-gold-main font-sans font-bold uppercase tracking-[0.25em] text-xs mb-5 reveal-up">
               <Leaf size={14} /> Estufa TM Flores
             </span>
-            <h2 className="font-serif text-4xl md:text-6xl italic font-light text-purple-deep leading-[1.05] mb-6 drop-shadow-sm reveal-up">
-              Plantas <span className="text-[#6B8E5A]">vivas</span>,<br />
-              cuidadas <span className="text-gold-main">à mão</span>.
-            </h2>
-            <p className="font-script text-3xl md:text-4xl text-purple-main mb-6 leading-snug drop-shadow-sm reveal-up">
+
+            <AnimatedText
+              text="Plantas vivas, cuidadas à mão."
+              className="font-serif text-4xl md:text-6xl italic font-light leading-[1.05] mb-6 text-purple-deep"
+              animationType="words"
+              staggerDelay={0.12}
+              duration={0.5}
+              initialY={20}
+              initialOpacity={0}
+              highlightWords={{
+                "vivas": "text-[#6B8E5A]",
+                "mão": "text-gold-main",
+              }}
+              style={{ textShadow: '0 1px 0 #e0d4e8, 0 2px 0 #d4c4e0, 0 3px 0 #c8b4d8, 0 4px 0 #bca4d0, 0 5px 0 #b094c8, 0 6px 1px rgba(88,48,120,0.1), 0 0 5px rgba(88,48,120,0.08), 0 1px 3px rgba(88,48,120,0.3)' }}
+            />
+
+            <p className="font-script text-3xl md:text-4xl text-purple-deep mb-6 leading-snug reveal-up"
+               style={{ textShadow: '0 2px 8px rgba(255,255,255,0.8), 0 4px 12px rgba(88,48,120,0.15)' }}>
               "Onde o verde encontra o romântico."
             </p>
             <p className="text-lg text-text-medium leading-relaxed mb-10 max-w-xl mx-auto reveal-up">
