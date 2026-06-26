@@ -88,7 +88,7 @@ function CestasChocolatesPage() {
               className="btn btn-whatsapp btn-magnetic px-10 py-4 mx-auto"
             >
               <WhatsAppIcon size={20} className="mr-2" />
-              Falar com a floricultura
+               Falar conosco
             </a>
           </div>
         </div>

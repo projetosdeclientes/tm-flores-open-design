@@ -201,7 +201,7 @@ function PlantasPage() {
               className="relative btn btn-whatsapp btn-magnetic inline-flex px-10 py-4"
             >
               <WhatsAppIcon size={20} className="mr-2" />
-              Falar com a floricultura
+               Falar conosco
             </a>
           </div>
         </div>
