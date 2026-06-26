@@ -196,10 +196,10 @@ function SectionHeader({ eyebrow, title, centered = true }: { eyebrow: string; t
 
 function Index() {
   const maisVendidos = [
-    products.find(p => p.id === "buque-misto-sol-radiante")!,
+    products.find(p => p.id === "buque-misto-girassol")!,
     products.find(p => p.id === "cesta-cafe-chocolates")!,
     products.find(p => p.id === "buque-12-rosas")!,
-    products.find(p => p.id === "buque-misto-girassol")!
+    products.find(p => p.id === "buque-misto-sol-radiante")!
   ];
 
   const buquesHome = [
