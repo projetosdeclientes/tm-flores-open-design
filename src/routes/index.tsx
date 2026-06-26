@@ -338,11 +338,11 @@ function Index() {
                 "vivas": "text-[#6B8E5A]",
                 "mão": "text-gold-main",
               }}
-              style={{ textShadow: '0 1px 0 #e0d4e8, 0 2px 0 #d4c4e0, 0 3px 0 #c8b4d8, 0 4px 0 #bca4d0, 0 5px 0 #b094c8, 0 6px 1px rgba(88,48,120,0.1), 0 0 5px rgba(88,48,120,0.08), 0 1px 3px rgba(88,48,120,0.3)' }}
+              style={{ textShadow: '0 1px 0 rgba(0,0,0,0.12), 0 2px 0 rgba(0,0,0,0.10), 0 3px 0 rgba(0,0,0,0.08), 0 4px 0 rgba(0,0,0,0.06), 0 5px 0 rgba(0,0,0,0.04), 0 6px 1px rgba(0,0,0,0.06), 0 0 5px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.12)' }}
             />
 
             <p className="font-script text-3xl md:text-4xl text-purple-deep mb-6 leading-snug reveal-up"
-               style={{ textShadow: '0 2px 8px rgba(255,255,255,0.8), 0 4px 12px rgba(88,48,120,0.15)' }}>
+               style={{ textShadow: '0 2px 4px rgba(0,0,0,0.15), 0 4px 12px rgba(0,0,0,0.08)' }}>
               "Onde o verde encontra o romântico."
             </p>
             <p className="text-lg text-text-medium leading-relaxed mb-10 max-w-xl mx-auto reveal-up">
