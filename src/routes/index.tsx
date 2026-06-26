@@ -5,9 +5,10 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { ProductCard, MoreCard } from '@/components/ProductCard'
 import { ArrowRight, Star } from 'lucide-react'
+import { Leaf } from 'lucide-react'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { useEffect, useState } from 'react'
-import { LogoCircle } from '@/components/LogoCircle'
+import estufaHome from '@/assets/plantas/estufa-home.jpg'
 
 
 export const Route = createFileRoute('/')({
@@ -270,10 +271,10 @@ function Index() {
         </div>
       </section>
 
-      {/* Seção: Cestas & Chocolates */}
+      {/* Seção: Plantas */}
       <section className="py-24 bg-cream products-section border-t border-gold-main/5">
         <div className="container mx-auto px-6">
-          <SectionHeader eyebrow="Presentear" title="Cestas & Chocolates" />
+          <SectionHeader eyebrow="Doçura" title="Cestas & Chocolates" />
           
           <div className="products-carousel-wrapper">
             <div className="flex overflow-x-auto pb-10 gap-3 scrollbar-hide snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:overflow-visible products-carousel reveal-stagger px-4 md:px-0">
@@ -289,7 +290,6 @@ function Index() {
                 <MoreCard to="/cestas-chocolates" label="Ver todas as cestas" icon="🎁" />
               </div>
             </div>
-
           </div>
           <div className="mt-16 flex justify-center reveal-up">
             <Link 
@@ -298,7 +298,7 @@ function Index() {
             >
               <div className="absolute inset-0 bg-lavender-ultra/40 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
               <div className="relative flex items-center gap-3">
-                <span className="font-serif italic text-xl text-purple-deep font-semibold">Conhecer cestas e presentes</span>
+                <span className="font-serif italic text-xl text-purple-deep font-semibold">Descobrir cestas e chocolates</span>
                 <div className="w-10 h-10 rounded-full bg-purple-deep flex items-center justify-center text-white group-hover:bg-gold-main transition-colors duration-300">
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -308,40 +308,61 @@ function Index() {
         </div>
       </section>
 
-      {/* Seção: Plantas */}
-      <section className="py-24 bg-cream products-section border-t border-gold-main/5">
-        <div className="container mx-auto px-6">
-          <SectionHeader eyebrow="Verde" title="Plantas" />
-          
-          <div className="products-carousel-wrapper">
-            <div className="flex overflow-x-auto pb-10 gap-3 scrollbar-hide snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:overflow-visible products-carousel reveal-stagger px-4 md:px-0">
-              {products
-                .filter(p => p.category === 'plantas')
-                .slice(0, 4)
-                .map((p) => (
-                  <div key={p.id} className="snap-center min-w-[78vw] md:min-w-[260px] lg:min-w-0">
-                    <ProductCard {...p} />
-                  </div>
-                ))}
-              <div className="snap-center lg:hidden min-w-[78vw]">
-                <MoreCard to="/plantas" label="Ver todas as plantas" icon="🌱" />
+      {/* Seção: Plantas — Estufa Romântica (teaser) */}
+      <section className="relative overflow-hidden py-24 bg-gradient-to-br from-cream via-[#F5EFE6] to-[#EDE4D3]">
+        <div aria-hidden="true" className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-[#A8C4A0]/20 blur-3xl" />
+        <div aria-hidden="true" className="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] rounded-full bg-gold-main/10 blur-3xl" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="reveal-right">
+              <span className="inline-flex items-center gap-2 text-gold-main font-sans font-bold uppercase tracking-[0.25em] text-xs mb-5">
+                <Leaf size={14} /> Estufa TM Flores
+              </span>
+              <h2 className="font-serif text-4xl md:text-6xl italic font-light text-purple-deep leading-[1.05] mb-6">
+                Plantas <span className="text-[#6B8E5A]">vivas</span>,<br />
+                cuidadas <span className="text-gold-main">à mão</span>.
+              </h2>
+              <p className="font-script text-3xl md:text-4xl text-purple-main mb-6 leading-snug">
+                "Onde o verde encontra o romântico."
+              </p>
+              <p className="text-lg text-text-medium leading-relaxed mb-10 max-w-xl">
+                Nossa coleção de plantas é viva e muda toda semana. Em vez de uma vitrine fixa,
+                conversa com a gente: contamos o que temos disponível agora — com foto, preço e cuidado.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://wa.me/5511918475136?text=Oii%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20as%20op%C3%A7%C3%B5es%20de%20plantas%20dispon%C3%ADveis!"
+                  target="_blank"
+                  rel="noopener"
+                  className="btn btn-whatsapp btn-magnetic inline-flex justify-center px-8 py-4"
+                >
+                  <WhatsAppIcon size={20} className="mr-2" />
+                  Ver plantas disponíveis
+                </a>
+                <Link
+                  to="/plantas"
+                  className="inline-flex items-center justify-center gap-3 bg-white border-2 border-purple-main/20 px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+                >
+                  <span className="font-serif italic text-lg text-purple-deep font-semibold">Conhecer a estufa</span>
+                  <ArrowRight size={18} className="text-purple-deep" />
+                </Link>
               </div>
             </div>
 
-          </div>
-          <div className="mt-16 flex justify-center reveal-up">
-            <Link 
-              to="/plantas" 
-              className="group relative overflow-hidden bg-white border-2 border-purple-main/20 px-12 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 active:scale-95"
-            >
-              <div className="absolute inset-0 bg-lavender-ultra/40 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-              <div className="relative flex items-center gap-3">
-                <span className="font-serif italic text-xl text-purple-deep font-semibold">Descobrir plantas naturais</span>
-                <div className="w-10 h-10 rounded-full bg-purple-deep flex items-center justify-center text-white group-hover:bg-gold-main transition-colors duration-300">
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            <div className="relative reveal-left">
+              <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/5]">
+                <img
+                  src={estufaHome}
+                  alt="Plantas da estufa TM Flores"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute bottom-6 right-6 bg-gold-gradient p-3 px-5 rounded-full shadow-xl text-text-dark font-sans font-bold text-xs uppercase tracking-widest">
+                  Estoque vivo
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -375,11 +396,6 @@ function Index() {
                   alt="Interior da Loja" 
                   className="w-full h-auto block transition-transform duration-700 group-hover:scale-105 store-teaser-img"
                 />
-
-                
-                {/* Floating Logo Overlay */}
-                <LogoCircle className="absolute top-6 left-6 w-24 h-24 animate-float" />
-
 
                 <div className="absolute bottom-6 right-6 bg-gold-gradient p-3 px-5 rounded-full shadow-xl text-text-dark font-sans font-bold text-xs uppercase tracking-widest store-teaser-badge">
                   Fundada em 2024
