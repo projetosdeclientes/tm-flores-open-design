@@ -40,41 +40,6 @@ function PlantasPage() {
     <main className="min-h-screen bg-cream">
       <Navbar />
 
-      {/* Hero — Estufa Romântica */}
-      <section className="relative overflow-hidden pt-40 pb-24 md:pb-32 bg-gradient-to-br from-cream via-[#F5EFE6] to-[#EDE4D3]">
-        {/* Folhagens decorativas */}
-        <div aria-hidden="true" className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-[#A8C4A0]/20 blur-3xl" />
-        <div aria-hidden="true" className="absolute top-10 -right-32 w-[28rem] h-[28rem] rounded-full bg-gold-main/10 blur-3xl" />
-        <div aria-hidden="true" className="absolute bottom-0 left-1/3 w-72 h-72 rounded-full bg-purple-main/10 blur-3xl" />
-
-        <div className="container mx-auto px-6 relative z-10 text-center max-w-3xl reveal-fade">
-          <span className="inline-flex items-center gap-2 text-gold-main font-sans font-bold uppercase tracking-[0.25em] text-xs mb-6">
-            <Leaf size={14} /> Estufa TM Flores
-          </span>
-          <h1 className="font-serif text-5xl md:text-7xl italic font-light text-purple-deep leading-[1.05] mb-6">
-            Plantas <span className="text-[#6B8E5A]">vivas</span>,<br />
-            cuidadas <span className="text-gold-main">à mão</span>.
-          </h1>
-          <p className="font-script text-3xl md:text-4xl text-purple-main mb-8 leading-snug">
-            "Onde o verde encontra o romântico."
-          </p>
-          <p className="text-lg text-text-medium leading-relaxed max-w-xl mx-auto mb-10">
-            Nossa coleção de plantas é viva e muda toda semana. Por isso, em vez de uma vitrine fixa,
-            convidamos você a conversar com a gente: nos conte qual planta você está procurando e
-            mostramos o que temos disponível agora — com foto, preço e cuidado.
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="btn btn-whatsapp btn-magnetic inline-flex px-10 py-4"
-          >
-            <WhatsAppIcon size={20} className="mr-2" />
-            Ver plantas disponíveis hoje
-          </a>
-        </div>
-      </section>
-
       {/* Tipos de plantas que vendem */}
       <section className="py-24 bg-cream">
         <div className="container mx-auto px-6">
