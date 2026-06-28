@@ -88,7 +88,6 @@ function BuquesPage() {
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}>
-        <div className="absolute inset-0 bg-white/70" />
         <div className="container mx-auto px-6 relative z-10">
           <ProductSection title="Buquês de Rosas" products={buquesRosas} />
         </div>
