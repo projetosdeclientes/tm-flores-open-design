@@ -8,6 +8,7 @@ function categoryToPath(category: string): string {
   const map: Record<string, string> = {
     buques: '/buques',
     'buques-mistos': '/buques',
+    'buques-noiva': '/buques',
     plantas: '/plantas',
     'cestas-chocolates': '/cestas-chocolates',
   };
