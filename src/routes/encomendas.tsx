@@ -1,8 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import { useEffect } from 'react'
-import { Camera, MessageSquare, Flower2, Gift } from 'lucide-react'
+import { useState } from 'react'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { LogoCircle } from '@/components/LogoCircle'
 

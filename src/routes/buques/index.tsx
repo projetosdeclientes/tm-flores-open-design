@@ -88,13 +88,19 @@ function BuquesPage() {
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}>
+        <div className="absolute inset-0 bg-white/70" />
         <div className="container mx-auto px-6 relative z-10">
           <ProductSection title="Buquês de Rosas" products={buquesRosas} />
         </div>
       </section>
 
-      <section className="py-24 bg-cream products-catalog-section relative z-10">
-        <div className="container mx-auto px-6">
+      <section className="relative py-24 overflow-hidden" style={{
+        backgroundImage: 'url(/products/images/buque-mistos-transicao.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="container mx-auto px-6 relative z-10">
           <ProductSection title="Buquês Mistos" products={buquesMistos} />
         </div>
       </section>
