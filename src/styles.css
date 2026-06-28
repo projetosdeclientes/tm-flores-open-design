@@ -232,6 +232,48 @@
   animation: float 6s ease-in-out infinite;
 }
 
+/* Paint reveal animation (clip-path wipe) */
+@keyframes paintReveal {
+  0% { clip-path: inset(0 100% 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+.paint-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.paint-title {
+  position: relative;
+  display: inline;
+  color: transparent;
+  font-weight: 700;
+}
+
+.paint-title::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: #2D1A4A;
+  white-space: nowrap;
+  clip-path: inset(0 100% 0 0);
+  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.3s forwards;
+}
+
+.paint-title::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  left: -8px;
+  right: -8px;
+  background: white;
+  border-radius: 4px;
+  z-index: -1;
+  clip-path: inset(0 100% 0 0);
+  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.3s forwards;
+}
+
 /* Utils */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

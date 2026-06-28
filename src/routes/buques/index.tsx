@@ -30,7 +30,7 @@ function CategoryHero({ eyebrow, title, subtitle }: { eyebrow: string; title: st
   )
 }
 
-function ProductSection({ title, products, initialCount = 8 }: { title: string; products: any[]; initialCount?: number }) {
+function ProductSection({ title, products, initialCount = 8, paintReveal = false }: { title: string; products: any[]; initialCount?: number; paintReveal?: boolean }) {
   const [showAll, setShowAll] = useState(false);
   const displayedProducts = showAll ? products : products.slice(0, initialCount);
 
@@ -38,9 +38,17 @@ function ProductSection({ title, products, initialCount = 8 }: { title: string; 
 
   return (
     <div className="mb-20 opacity-100">
-      <h2 className="font-serif text-3xl md:text-4xl text-purple-deep mb-10 pb-4 border-b border-purple-main/10 italic">
-        {title}
-      </h2>
+      {paintReveal ? (
+        <h2 className="font-serif text-3xl md:text-4xl mb-10 pb-4 border-b border-purple-main/10">
+          <span className="paint-title-wrapper">
+            <span className="paint-title italic" data-text={title}>{title}</span>
+          </span>
+        </h2>
+      ) : (
+        <h2 className="font-serif text-3xl md:text-4xl text-purple-deep mb-10 pb-4 border-b border-purple-main/10 italic">
+          {title}
+        </h2>
+      )}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 mb-12">
         {displayedProducts.map((product) => (
           <ProductCard key={product.id} {...product} />
@@ -90,7 +98,7 @@ function BuquesPage() {
       }}>
         <div className="absolute inset-0 bg-white/45" />
         <div className="container mx-auto px-6 relative z-10">
-          <ProductSection title="Buquês de Rosas" products={buquesRosas} />
+          <ProductSection title="Buquês de Rosas" products={buquesRosas} paintReveal />
         </div>
       </section>
 
@@ -107,7 +115,7 @@ function BuquesPage() {
         backgroundAttachment: 'fixed'
       }}>
         <div className="container mx-auto px-6 relative z-10">
-          <ProductSection title="Buquês de Noiva" products={buquesNoiva} />
+          <ProductSection title="Buquês de Noiva" products={buquesNoiva} paintReveal />
         </div>
       </section>
 
