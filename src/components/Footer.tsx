@@ -106,8 +106,17 @@ export function Footer() {
 
 
       <div className="container mx-auto px-6 mt-16 pt-8 border-t border-gold-main/5 text-center text-xs text-text-light flex flex-col items-center gap-8">
-        <div className="w-full max-w-4xl h-[220px] md:hidden rounded-2xl overflow-hidden shadow-lg">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <div className="w-full max-w-4xl h-[220px] md:hidden rounded-2xl overflow-hidden shadow-lg relative group">
+          <div className="absolute inset-0 bg-cream flex items-center justify-center flex-col gap-3 text-text-medium group-hover:bg-cream-dark transition-colors cursor-pointer" id="map-placeholder" onClick={() => {
+            const el = document.getElementById('map-placeholder');
+            if (el) {
+              el.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.87654!2d-46.9937432!3d-23.6428329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa79bd9be0649%3A0x59310925c559aeae!2sTM%20Flores%20e%20Plantas!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>';
+            }
+          }}>
+            <MapPin size={32} className="text-gold-main" />
+            <p className="text-sm font-semibold">Shopping Central Park Cotia · Subsolo</p>
+            <p className="text-xs">Clique para carregar o mapa</p>
+          </div>
         </div>
         <p>© 2026 TM Flores e Plantas. Todos os direitos reservados.</p>
       </div>

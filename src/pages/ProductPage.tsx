@@ -110,6 +110,10 @@ export function ProductPage() {
                       src={mainImage} 
                       alt={product.name} 
                       className="w-full h-full object-cover transition-all duration-500"
+                      loading="eager"
+                      decoding="async"
+                      width="600"
+                      height="520"
                     />
                     {/* Navigation Arrows for Mobile and Desktop */}
                     <button 
@@ -156,6 +160,10 @@ export function ProductPage() {
                         src={img} 
                         alt={`${product.name} - Foto ${i + 1}`} 
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        width="96"
+                        height="96"
                       />
                     </div>
                   </button>

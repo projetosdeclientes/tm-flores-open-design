@@ -38,28 +38,34 @@ function AnnouncementBar() {
 function Hero() {
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=2000&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1400&q=75&auto=format&fit=crop",
       eyebrow: "TM Flores e Plantas",
       headline: "Flores que *falam pelo coração*",
       cta: "Ver nossos buquês",
       link: "/buques",
-      overlay: "bg-black/45"
+      overlay: "bg-black/45",
+      fetchPriority: "high",
+      loadAttr: "eager"
     },
     {
-      image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=2000&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=1400&q=75&auto=format&fit=crop",
       eyebrow: "Para quem você ama",
       headline: "Um gesto *simples* que fica para sempre",
       cta: "Presentear agora",
       link: "/buques",
-      overlay: "bg-black/35"
+      overlay: "bg-black/35",
+      fetchPriority: "low",
+      loadAttr: "lazy"
     },
     {
-      image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2000&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1400&q=75&auto=format&fit=crop",
       eyebrow: "Para os momentos únicos",
       headline: "Flores que marcam *histórias reais*",
       cta: "Fazer um pedido especial",
       link: "/encomendas",
-      overlay: "bg-black/55"
+      overlay: "bg-black/55",
+      fetchPriority: "low",
+      loadAttr: "lazy"
     }
   ]
 
@@ -114,6 +120,11 @@ function Hero() {
             src={slide.image}
             alt=""
             className="w-full h-full object-cover hero-parallax-layer"
+            loading={slide.loadAttr as any}
+            fetchPriority={slide.fetchPriority as any}
+            decoding="async"
+            width="1400"
+            height="900"
           />
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 hero-content">
             <span className="text-gold-main font-sans font-bold uppercase tracking-[0.3em] text-sm md:text-base mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700 hero-eyebrow drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
@@ -422,6 +433,10 @@ function Index() {
                   src={`/testimonials/images/depoimento-0${num}.png`} 
                   alt={`Depoimento ${num}`}
                   className="w-full h-auto object-contain rounded-xl"
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="300"
                 />
               </div>
             ))}
@@ -437,24 +452,6 @@ function Index() {
         </div>
       </section>
 
-      <script dangerouslySetInnerHTML={{ __html: `
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('active');
-            }
-          });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal-title, .reveal-stagger, .reveal-up, .reveal-fade, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
-          observer.observe(el);
-        });
-      `}} />
       <Footer />
     </main>
   )

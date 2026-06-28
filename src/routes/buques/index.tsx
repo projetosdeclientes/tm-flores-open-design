@@ -30,7 +30,7 @@ function CategoryHero({ eyebrow, title, subtitle }: { eyebrow: string; title: st
   )
 }
 
-function ProductSection({ title, products, initialCount = 8, paintReveal = false }: { title: string; products: any[]; initialCount?: number; paintReveal?: boolean }) {
+function ProductSection({ title, products, bgDark = false, initialCount = 8, paintReveal = false }: { title: string; products: any[]; bgDark?: boolean; initialCount?: number; paintReveal?: boolean }) {
   const [showAll, setShowAll] = useState(false);
   const displayedProducts = showAll ? products : products.slice(0, initialCount);
 
@@ -59,12 +59,13 @@ function ProductSection({ title, products, initialCount = 8, paintReveal = false
         <div className="flex justify-center mt-8">
           <button 
             onClick={() => setShowAll(!showAll)}
-            className="group flex items-center gap-2 font-serif text-xl font-semibold text-purple-main hover:text-purple-deep transition-all duration-300 py-3 px-8 rounded-full border-2 border-purple-main/20 hover:border-purple-main hover:bg-purple-main/5"
+            className={`group flex items-center gap-2 font-serif text-xl font-semibold transition-all duration-500 py-3 px-10 rounded-full shadow-lg hover:shadow-xl active:scale-95 ${
+              bgDark 
+                ? 'bg-white text-purple-deep border-2 border-white/90 hover:bg-purple-main hover:text-white hover:border-purple-main'
+                : 'bg-purple-deep text-white border-2 border-purple-deep hover:bg-purple-main hover:border-purple-main'
+            }`}
           >
             {showAll ? `Ver menos ${title}` : `Ver mais ${title}`}
-            <span className={`transition-transform duration-300 ${showAll ? 'rotate-180' : 'group-hover:translate-y-1'}`}>
-              {showAll ? '↑' : '↓'}
-            </span>
           </button>
         </div>
       )}
@@ -81,6 +82,24 @@ function BuquesPage() {
     window.scrollTo(0, 0)
   }, [])
 
+  // IntersectionObserver: paint reveal só dispara quando título entra na viewport
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '0px 0px -50px 0px' });
+
+    const wrappers = document.querySelectorAll('.paint-title-wrapper');
+    wrappers.forEach(w => io.observe(w));
+
+    return () => io.disconnect();
+  }, [])
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -90,7 +109,7 @@ function BuquesPage() {
         subtitle="Rosas frescas e composições exclusivas, selecionadas com cuidado para emocionar."
       />
 
-      <section className="relative py-24 overflow-hidden" style={{
+      <section className="relative py-24 overflow-hidden buques-rosas-section" style={{
         backgroundImage: 'url(/products/images/buque-rosas-fundo.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -98,7 +117,7 @@ function BuquesPage() {
       }}>
         <div className="absolute inset-0 bg-white/45" />
         <div className="container mx-auto px-6 relative z-10">
-          <ProductSection title="Buquês de Rosas" products={buquesRosas} paintReveal />
+          <ProductSection title="Buquês de Rosas" products={buquesRosas} paintReveal bgDark />
         </div>
       </section>
 
@@ -108,7 +127,7 @@ function BuquesPage() {
         </div>
       </section>
 
-      <section className="relative py-24 overflow-hidden" style={{
+      <section className="relative py-24 overflow-hidden buques-noiva-section" style={{
         backgroundImage: 'url(/products/images/buque-noiva-fundo.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

@@ -250,6 +250,7 @@
   font-weight: 700;
 }
 
+.paint-title.animate::before,
 .paint-title::before {
   content: attr(data-text);
   position: absolute;
@@ -257,7 +258,10 @@
   color: #2D1A4A;
   white-space: nowrap;
   clip-path: inset(0 100% 0 0);
-  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.3s forwards;
+}
+
+.paint-title.animate::before {
+  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.1s forwards;
 }
 
 .paint-title::after {
@@ -271,7 +275,46 @@
   border-radius: 4px;
   z-index: -1;
   clip-path: inset(0 100% 0 0);
-  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.3s forwards;
+}
+
+.paint-title.animate::after {
+  animation: paintReveal 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.1s forwards;
+}
+
+/* Background sections with mobile adaptation */
+@media (max-width: 768px) {
+  .buques-rosas-section,
+  .buques-noiva-section {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    min-height: auto !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+/* CLS prevention: product images */
+.product-card-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* Performance: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-title, .reveal-stagger, .reveal-up, .reveal-fade, .reveal-left, .reveal-right, .reveal-scale,
+  .paint-title.animate::before, .paint-title.animate::after,
+  .orb, .announcement-track {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Touch action for buttons */
+.btn, button, a {
+  touch-action: manipulation;
 }
 
 /* Utils */
