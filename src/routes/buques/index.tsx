@@ -94,7 +94,7 @@ function BuquesPage() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-24 bg-cream products-catalog-section relative z-10">
         <div className="container mx-auto px-6">
           <ProductSection title="Buquês Mistos" products={buquesMistos} />
         </div>
