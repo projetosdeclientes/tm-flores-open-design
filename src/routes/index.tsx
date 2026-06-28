@@ -206,7 +206,7 @@ function Index() {
   const buquesHome = [
     products.find(p => p.id === "buque-1-rosa")!,
     products.find(p => p.id === "buque-misto-encanto")!,
-    products.find(p => p.id === "buque-8-rosas")!,
+    products.find(p => p.id === "buque-noiva-chama")!,
     products.find(p => p.id === "buque-15-rosas")!
   ];
 
