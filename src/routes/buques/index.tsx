@@ -94,13 +94,8 @@ function BuquesPage() {
         </div>
       </section>
 
-      <section className="relative py-24 overflow-hidden" style={{
-        backgroundImage: 'url(/products/images/buque-mistos-transicao.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-24">
+        <div className="container mx-auto px-6">
           <ProductSection title="Buquês Mistos" products={buquesMistos} />
         </div>
       </section>
