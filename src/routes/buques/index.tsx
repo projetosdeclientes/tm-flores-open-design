@@ -86,6 +86,16 @@ function BuquesPage() {
         <div className="container mx-auto px-6">
           <ProductSection title="Buquês de Rosas" products={buquesRosas} />
           <ProductSection title="Buquês Mistos" products={buquesMistos} />
+        </div>
+      </section>
+
+      <section className="relative py-24 overflow-hidden" style={{
+        backgroundImage: 'url(/products/images/buque-noiva-fundo.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="container mx-auto px-6 relative z-10">
           <ProductSection title="Buquês de Noiva" products={buquesNoiva} />
         </div>
       </section>
