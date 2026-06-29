@@ -88,14 +88,22 @@ function BuquesPage() {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
+          const title = entry.target.querySelector('.paint-title');
+          if (title) title.classList.add('animate');
           io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.3, rootMargin: '0px 0px -50px 0px' });
 
     const wrappers = document.querySelectorAll('.paint-title-wrapper');
-    wrappers.forEach(w => io.observe(w));
+    wrappers.forEach(w => {
+      io.observe(w);
+      const rect = w.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const title = w.querySelector('.paint-title');
+        if (title) title.classList.add('animate');
+      }
+    });
 
     return () => io.disconnect();
   }, [])
