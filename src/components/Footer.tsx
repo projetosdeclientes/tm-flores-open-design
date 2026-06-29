@@ -83,21 +83,28 @@ export function Footer() {
         {/* Hours */}
         <div className="flex flex-col items-center md:items-start">
           <h4 className="font-serif text-lg font-bold text-purple-deep mb-6 uppercase tracking-wider">
-            Horário
+            Horário de Funcionamento
           </h4>
-          <ul className="flex flex-col gap-4 text-sm text-text-medium items-center md:items-start">
-            <li className="flex gap-3">
-              <Clock size={18} className="text-gold-main shrink-0" />
+          <ul className="flex flex-col gap-3 text-sm text-text-medium items-center md:items-start">
+            <li className="flex gap-3 items-start">
+              <Clock size={18} className="text-gold-main shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-text-dark">Segunda a Sábado</p>
-                <p>10h às 22h</p>
+                <p className="font-bold text-text-dark">Segunda</p>
+                <p className="text-text-light">12h às 21h</p>
               </div>
             </li>
-            <li className="flex gap-3">
-              <Clock size={18} className="text-gold-main shrink-0" />
+            <li className="flex gap-3 items-start">
+              <Clock size={18} className="text-gold-main shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold text-text-dark">Terça a Sábado</p>
+                <p className="text-text-light">10h às 22h</p>
+              </div>
+            </li>
+            <li className="flex gap-3 items-start">
+              <Clock size={18} className="text-gold-main shrink-0 mt-0.5" />
               <div>
                 <p className="font-bold text-text-dark">Domingo</p>
-                <p>12h às 20h</p>
+                <p className="text-text-light">14h às 20h</p>
               </div>
             </li>
           </ul>
