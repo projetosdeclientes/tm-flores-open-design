@@ -27,21 +27,18 @@ export function ProductPage() {
     { 
       label: "Foto Principal", 
       filter: "none", 
-      objectPosition: "center 60%",
       transform: "none",
       description: "Visão frontal e detalhada do arranjo." 
     },
     { 
       label: "Detalhes", 
       filter: "saturate(1.5) brightness(1.06) contrast(1.12)", 
-      objectPosition: "center 40%",
       transform: "scale(1.35)",
       description: "Destaque para a textura e vivacidade das pétalas." 
     },
     { 
       label: "Cena", 
       filter: "sepia(0.15) brightness(0.93) contrast(1.1)", 
-      objectPosition: "center 55%",
       transform: "none",
       description: "O buquê em um ambiente real e aconchegante." 
     }
@@ -109,7 +106,7 @@ export function ProductPage() {
                     <img 
                       src={mainImage} 
                       alt={product.name} 
-                      className="w-full h-full object-cover transition-all duration-500"
+                      className="w-full h-full object-contain bg-white transition-all duration-500"
                       loading="eager"
                       decoding="async"
                       width="600"
@@ -159,7 +156,7 @@ export function ProductPage() {
                       <img 
                         src={img} 
                         alt={`${product.name} - Foto ${i + 1}`} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-white"
                         loading="lazy"
                         decoding="async"
                         width="96"

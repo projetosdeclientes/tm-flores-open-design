@@ -87,8 +87,7 @@ export function ProductCard({
           <img
             src={images[currentImageIndex]}
             alt={name}
-            className="product-card-image w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            style={{ objectPosition: 'center 45%' }}
+            className="product-card-image w-full h-full transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
             decoding="async"
           />
