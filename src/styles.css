@@ -427,6 +427,14 @@ html {
     margin-bottom: 7px !important;
   }
 
+  /* ---- Cards same height across row ---- */
+  .products-catalog-grid,
+  .products-catalog-section .grid,
+  .products-section .grid,
+  .products-carousel-wrapper .products-carousel {
+    align-items: stretch !important;
+  }
+
   /* ---- Button layout: horizontal row with outline + icon ---- */
   .product-card-actions {
     flex-direction: row !important;
