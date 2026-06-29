@@ -73,7 +73,7 @@ export function ProductCard({
   };
 
   return (
-    <article className="product-card group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 border border-gold-main/5 flex flex-col h-full cursor-pointer relative">
+    <article className="product-card group flex flex-col cursor-pointer">
       <div 
         className="product-card-gallery relative overflow-hidden"
         onTouchStart={onTouchStart}
@@ -119,7 +119,7 @@ export function ProductCard({
         )}
       </div>
 
-      <div className="product-card-body p-4 flex flex-col flex-grow">
+      <div className="product-card-body flex flex-col flex-grow">
         <Link 
           to={`${categoryToPath(productsData.find(p => p.id === id)?.category || 'buques')}/${id}` as any} 
           className="block"

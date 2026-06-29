@@ -96,7 +96,7 @@ export function ProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div className="flex flex-col gap-6">
               <div 
-                className="relative w-full rounded-[20px] overflow-hidden shadow-xl bg-white group/gallery"
+                className="relative w-full rounded-xl overflow-hidden group/gallery"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
@@ -106,7 +106,7 @@ export function ProductPage() {
                     <img 
                       src={mainImage} 
                       alt={product.name} 
-                      className="w-full h-auto block bg-white transition-all duration-500"
+                      className="w-full h-auto block transition-all duration-500"
                       loading="eager"
                       decoding="async"
                       width="600"
@@ -156,7 +156,7 @@ export function ProductPage() {
                       <img 
                         src={img} 
                         alt={`${product.name} - Foto ${i + 1}`} 
-                        className="w-full h-auto block bg-white"
+                        className="w-full h-auto block"
                         loading="lazy"
                         decoding="async"
                         width="96"
