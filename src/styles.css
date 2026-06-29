@@ -431,8 +431,42 @@ html {
   .products-catalog-grid,
   .products-catalog-section .grid,
   .products-section .grid,
-  .products-carousel-wrapper .products-carousel {
+  .products-carousel-wrapper .products-carousel,
+  section .grid.grid-cols-2 {
     align-items: stretch !important;
+  }
+
+  /* Card uses flex column to distribute space */
+  .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Body grows to fill remaining space */
+  .product-card-body {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Consistent name height: 2 lines minimum, clip longer names */
+  .product-card-name {
+    min-height: 2.6em !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  /* Price area: consistent vertical position */
+  .product-card-body > div:nth-child(2) {
+    margin-top: 4px !important;
+    margin-bottom: auto !important;
+  }
+
+  /* Actions pushed to the bottom of the card */
+  .product-card-actions {
+    margin-top: auto !important;
   }
 
   /* ---- Button layout: horizontal row with outline + icon ---- */
