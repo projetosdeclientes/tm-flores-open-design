@@ -143,12 +143,12 @@ export function ProductCard({
           )}
         </div>
 
-        <div className="mt-auto flex flex-col sm:flex-row gap-2">
+        <div className="mt-auto flex flex-col sm:flex-row gap-2 product-card-actions">
           <Link
             to={`${categoryToPath(productsData.find(p => p.id === id)?.category || 'buques')}/${id}` as any}
             className="flex-1 justify-center text-[13px] py-2 px-4 border-[1.5px] border-purple-main text-purple-main rounded-full font-semibold flex items-center gap-1 hover:bg-purple-main hover:text-white transition-all text-center"
           >
-            Ver produto →
+            Ver produto<span className="hidden md:inline"> →</span>
           </Link>
           <a
             href={whatsappUrl}
@@ -158,7 +158,7 @@ export function ProductCard({
             className="flex-1 justify-center text-[13px] py-2 px-4 bg-whatsapp text-white rounded-full font-semibold flex items-center gap-1 transition-all hover:scale-105 flex justify-center"
           >
             <WhatsAppIcon size={16} />
-            WhatsApp
+            <span className="product-card-wpp-text">WhatsApp</span>
           </a>
         </div>
       </div>
