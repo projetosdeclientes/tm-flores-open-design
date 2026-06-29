@@ -96,7 +96,7 @@ export function ProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div className="flex flex-col gap-6">
               <div 
-                className="relative w-full rounded-xl overflow-hidden group/gallery"
+                className="relative w-full rounded-xl overflow-hidden group/gallery bg-white flex items-center justify-center"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
@@ -106,7 +106,7 @@ export function ProductPage() {
                     <img 
                       src={mainImage} 
                       alt={product.name} 
-                      className="w-full h-auto block transition-all duration-500"
+                      className="w-full h-full object-contain object-center bg-white block transition-all duration-500"
                       loading="eager"
                       decoding="async"
                       width="600"
@@ -145,25 +145,25 @@ export function ProductPage() {
               </div>
               <div className="hidden md:flex gap-4">
                 {product.images.map((img, i) => (
-                  <button 
-                    key={i}
-                    onClick={() => setActiveThumb(i)}
-                    className={`relative w-24 aspect-square rounded-xl overflow-hidden transition-all duration-300 ${
-                      activeThumb === i ? 'border-[2.5px] border-[#C9A040] scale-105 shadow-md' : 'border-2 border-transparent opacity-70 hover:opacity-100'
-                    }`}
-                  >
-                    <div className="w-full h-full overflow-hidden">
-                      <img 
-                        src={img} 
-                        alt={`${product.name} - Foto ${i + 1}`} 
-                        className="w-full h-auto block"
-                        loading="lazy"
-                        decoding="async"
-                        width="96"
-                        height="96"
-                      />
-                    </div>
-                  </button>
+                    <button 
+                      key={i}
+                      onClick={() => setActiveThumb(i)}
+                      className={`relative w-24 aspect-square rounded-xl overflow-hidden transition-all duration-300 bg-white ${
+                        activeThumb === i ? 'border-[2.5px] border-[#C9A040] scale-105 shadow-md' : 'border-2 border-transparent opacity-70 hover:opacity-100'
+                      }`}
+                    >
+                      <div className="w-full h-full overflow-hidden flex items-center justify-center">
+                        <img 
+                          src={img} 
+                          alt={`${product.name} - Foto ${i + 1}`} 
+                          className="w-full h-full object-contain bg-white block"
+                          loading="lazy"
+                          decoding="async"
+                          width="96"
+                          height="96"
+                        />
+                      </div>
+                    </button>
                 ))}
               </div>
             </div>

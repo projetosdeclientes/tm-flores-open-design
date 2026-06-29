@@ -73,9 +73,9 @@ export function ProductCard({
   };
 
   return (
-    <article className="product-card group flex flex-col cursor-pointer">
+    <article className="product-card group flex flex-col cursor-pointer bg-white border-[0.5px] border-[#e8e8e8] rounded-[10px] overflow-hidden p-0">
       <div 
-        className="product-card-gallery relative overflow-hidden"
+        className="product-card-gallery relative w-full aspect-square bg-white rounded-[8px_8px_0_0] overflow-hidden flex items-center justify-center"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -87,7 +87,7 @@ export function ProductCard({
           <img
             src={images[currentImageIndex]}
             alt={name}
-            className="product-card-image w-full h-auto block transition-transform duration-700 group-hover:scale-105"
+            className="product-card-image w-full h-full object-contain object-center bg-white block transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
             decoding="async"
           />
@@ -119,7 +119,7 @@ export function ProductCard({
         )}
       </div>
 
-      <div className="product-card-body flex flex-col flex-grow">
+      <div className="product-card-body flex flex-col flex-grow bg-white px-[9px] pb-[10px] pt-[8px]">
         <Link 
           to={`${categoryToPath(productsData.find(p => p.id === id)?.category || 'buques')}/${id}` as any} 
           className="block"

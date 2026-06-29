@@ -245,11 +245,10 @@
    PRODUCT CARDS
 ───────────────────────────────────────── */
 .product-card {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  overflow: visible;
+  background-color: #ffffff;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -278,8 +277,8 @@
 .product-card:hover .product-card-image { transform: scale(1.04); }
 
 .product-card-body {
-  background: transparent;
-  padding: 8px 4px 12px;
+  background-color: #ffffff;
+  padding: 8px 9px 10px;
   border: none;
   flex-grow: 1;
   display: flex;
