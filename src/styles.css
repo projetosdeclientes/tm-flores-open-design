@@ -322,20 +322,43 @@
    MOBILE: Product cards grid (max-width: 767px)
    ========================================== */
 @media (max-width: 767px) {
+  /* ---- Section containers: minimal padding ---- */
+  .products-section > div,
+  .products-catalog-section > div,
+  .buques-rosas-section > div,
+  .buques-noiva-section > div {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .products-section .container.mx-auto,
+  .products-catalog-section .container.mx-auto {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
   /* ---- Change horizontal carousel to 2-column grid ---- */
   .products-carousel-wrapper .products-carousel {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-    padding: 0 4px !important;
+    gap: 5px !important;
+    padding: 0 !important;
     overflow: visible !important;
     scroll-snap-type: none !important;
+    width: 100% !important;
   }
 
+  /* Card width: use full column space */
   .products-carousel-wrapper .products-carousel > div,
   .products-carousel-wrapper .products-carousel > a {
     min-width: 0 !important;
+    max-width: none !important;
     width: 100% !important;
+    margin: 0 !important;
     scroll-snap-align: none !important;
     flex: none !important;
   }

@@ -75,7 +75,7 @@ export function ProductCard({
   return (
     <article className="product-card group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 border border-gold-main/5 flex flex-col h-full cursor-pointer relative">
       <div 
-        className="product-card-gallery relative aspect-square overflow-hidden"
+        className="product-card-gallery relative overflow-hidden"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -87,7 +87,7 @@ export function ProductCard({
           <img
             src={images[currentImageIndex]}
             alt={name}
-            className="product-card-image w-full h-full transition-transform duration-700 group-hover:scale-105"
+            className="product-card-image w-full h-auto block transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
             decoding="async"
           />
