@@ -106,7 +106,7 @@ export function ProductPage() {
                     <img 
                       src={mainImage} 
                       alt={product.name} 
-                      className="w-full h-full object-contain object-center bg-white block transition-all duration-500 md:h-auto md:bg-transparent"
+                      className="w-full h-full object-contain object-center bg-white block transition-all duration-500 md:h-auto md:bg-transparent md:max-h-[520px]"
                       loading="eager"
                       decoding="async"
                       width="600"
