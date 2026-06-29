@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @theme {
   --font-serif: "Cormorant Garamond", "Times New Roman", serif;
   --font-sans: "Open Sans", "Helvetica Neue", sans-serif;
@@ -293,12 +302,43 @@
   }
 }
 
-/* CLS prevention: product images */
-.product-card-image {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: contain;
-  background-color: #ffffff;
+/* CLS prevention: product images — mobile-only aspect-ratio */
+@media (max-width: 767px) {
+  .product-card-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background-color: #ffffff;
+  }
+}
+
+/* Desktop/tablet: product card image max-height */
+@media (min-width: 768px) {
+  .product-card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background-color: #ffffff;
+    max-height: 280px;
+  }
+
+  /* Desktop/tablet: product page main gallery image */
+  .group\/gallery img:first-child {
+    max-height: 520px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff;
+    display: block;
+  }
+
+  /* Desktop/tablet: thumbnail images */
+  .w-24.aspect-square img {
+    max-height: 80px;
+    object-fit: contain;
+    background-color: #ffffff;
+  }
 }
 
 /* Performance: reduced motion */
